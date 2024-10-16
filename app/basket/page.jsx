@@ -1,9 +1,9 @@
 import react from "react";
 
-export default function Page() {
+export default function Basket() {
     return (
         <section>
-            <h1>Main Page</h1>
+            <h1>Basket Page</h1>
         </section>
     );
 }
