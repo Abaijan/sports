@@ -15,16 +15,20 @@ body{
 }
 @layer components {
     .container{
-        @apply mx-auto px-5 ;
+        @apply mx-auto  md:px-4;
     }
 }
+.red{
+    color: #FF0000;
+}
+
 .white{
     color: #222222;
     background-color: #FFFFFF;
 }
-.dark{
+.blue{
     color: #FFFFFF;
-    background-color: #1142c0;
+    background-color:  #112A76;
 }
 .manrope{
     font-family: 'Manrope', sans-serif;
