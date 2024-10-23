@@ -1,10 +1,8 @@
 
 import react from "react";
-import HomeAbout from "../components/Main/homeAbout/HomeAbout";
-import { BannerHome } from "../components/Main/BannerHome";
-import { BannerWithDescription } from "../components/general/BannerWithDescription";
-import { Review } from "../components/Main/review/Review";
+import { BannerHome, HomeAbout, Review, BannerWithDescription} from "@/app/components";
 
+export default function Main(){
     return (
         <section id="main">
             <BannerHome/>

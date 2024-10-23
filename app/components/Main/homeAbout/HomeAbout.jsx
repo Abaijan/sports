@@ -5,7 +5,7 @@ import imagesAbuot from '../../../assets/images/image61.png'
 
 // components/HomeAbout.js
 
-const HomeAbout = () => {
+export const HomeAbout = () => {
   return (
     <section className="bg-gray-100 py-10">
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center">
@@ -29,8 +29,8 @@ const HomeAbout = () => {
             className="bg-blue-600
              text-white
               font-medium 
-              py-2 px-4 
-              rounded-full
+              py-2 px-6
+              rounded-[10px]
                hover:bg-blue-700 
                transition duration-300"> Подробнее</a>
         </div>
@@ -39,5 +39,5 @@ const HomeAbout = () => {
   );
 };
 
-export default HomeAbout;
+
 

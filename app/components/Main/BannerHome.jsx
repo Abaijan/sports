@@ -39,21 +39,21 @@ export const BannerHome =  () => {
                         height={400}
                     />
                     <section className="swiper ">
-                        {
-                            initialData && initialData.map(item => {
-                                return (
-                                    <Image
-                                        key={item.id}
-                                        className="w-[1000px] h-[800px] top-[40px] absolute   "
-                                        src={item.image}
-                                        alt="banner"
-                                        width={400}
-                                        height={400}
-                                    />
-                                )
-                            })
+                        {/*{*/}
+                        {/*    initialData && initialData.map(item => {*/}
+                        {/*        return (*/}
+                        {/*            <Image*/}
+                        {/*                key={item.id}*/}
+                        {/*                className="w-[1000px] h-[800px] top-[40px] absolute   "*/}
+                        {/*                src={item.image}*/}
+                        {/*                alt="banner"*/}
+                        {/*                width={400}*/}
+                        {/*                height={400}*/}
+                        {/*            />*/}
+                        {/*        )*/}
+                        {/*    })*/}
 
-                        }
+                        {/*}*/}
                     </section>
 
                 </section>
