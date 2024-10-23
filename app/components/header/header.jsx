@@ -1,10 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import basket from "../../../assets/icons/basketicons.svg";
-import app from "../../../app/page";
 
 export const Header = () => {
-    app.call()
     return (
         <header className="blue w-full" >
             <section className="container flex justify-between ">

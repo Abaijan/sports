@@ -1,9 +1,10 @@
-import { Header, Footer, BannerHome } from "../components";
+import { BannerHome } from "../components";
 
-export default function Page() {
+export default async function Page() {
+
     return (
         <section id="main">
-            <BannerHome />
+                <BannerHome />
         </section>
     );
 }
