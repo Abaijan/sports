@@ -12,7 +12,7 @@ export const BannerHome = () => {
                         {/*swiper buttons*/}
                     </section>
                 </section>
-                <section className="bg-repeat-no-repeat bg-center w-[60%]" style={{backgroundImage: `url('/assets/images/bannerHome.svg')`}}>
+                <section className="bg-repeat-no-repeat bg-center w-[60%]" style={{backgroundImage: `url('../../../../assets/images/bannerHome.svg')`}}>
 
                 </section>
             </section>
