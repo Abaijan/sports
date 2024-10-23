@@ -1,0 +1,21 @@
+
+import styles from './banner.module.css';
+
+export function BannerWithDescription() {
+  return (
+    <section className={`relative h-96 flex items-center justify-center ${styles.banner}`}>
+      <div className="container mx-auto px-4 flex flex-col md:flex-row items-center p-10">
+        <div className='absolute inset-0 bg-black opacity-30'></div>
+        <div className='relative text-center text-white z-10'> 
+          <h2 className='text-2xl font-bold mb-4'>
+            Мы — команда, которая любит спорт и знает, что нужно для эффективных тренировок.
+            В нашем магазине представлены лучшие спорт
+          </h2>
+          <button className="bg-blue-600 text-white font-medium py-2 px-4 rounded-full hover:bg-blue-700 transition duration-300">
+            Связаться с нами
+          </button>
+        </div>
+      </div>
+    </section>
+  );
+}
