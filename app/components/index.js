@@ -1,5 +1,5 @@
-export { Footer } from "./footer/footer";
-export { Header } from "./header/header";
+export { Footer } from "@/app/components/footer/footer";
+export { Header } from "@/app/components/header/header";
 
 
 //  Main
