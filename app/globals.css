@@ -10,6 +10,7 @@
     box-sizing: border-box;
 }
 
+
 body{
     font-family: 'Manrope', sans-serif;
 }
@@ -20,6 +21,9 @@ body{
 }
 .red{
     color: #FF0000;
+}
+.impact{
+    font-family: Impact, sans-serif;
 }
 
 .white{

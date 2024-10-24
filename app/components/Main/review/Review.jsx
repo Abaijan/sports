@@ -15,11 +15,11 @@ export const  Review = () =>  {
               Мы — команда, которая любит спорт и знает, что нужно для эффективных тренировок. В нашем магазине
               представлены лучшие спортМы — команда, которая любит спорт и знает, что нужно для эффективных
             </p>
-            <span className="flex justify-start content-center mt-8">
+            <span className="flex gap-2 content-center  mt-8">
               <Image
                   src={Photo}
                   alt="John Photo"
-                  className="rounded-full"
+                  className="w-[50px] h-[50px] rounded-full"
                   width={50}
                   height={50}
               />
