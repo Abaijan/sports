@@ -1,20 +1,14 @@
-'use client';
-import {useEffect, useState} from "react";
 import dynamicFetch from "@/hooks/fetch";
 
-export const Advantages = () => {
-    const [advantages, setAdvantages] = useState([]);
+export const Advantages = async () => {
+    const advantages = await dynamicFetch('/advantages');
 
-    useEffect(() => {
-        dynamicFetch('/advantages').then(res => setAdvantages(res));
-    }, []);
-
-    return(
+    return (
         <section className="container flex flex-col">
             <h2 className="impact text-[36px] font-semibold">Преимущества</h2>
-            <div className="space-y-6 manrope lg:px-[40px]  pt-[100px] pb-[100px]  font-raleway">
+            <div className="space-y-6 manrope lg:px-[40px] pt-[100px] pb-[100px] font-raleway">
                 {advantages.map((item) => (
-                    <div key={item.id} className="grid md:grid-cols-3  items-center-cols-1 border-b pb-14">
+                    <div key={item.id} className="grid md:grid-cols-3 items-center-cols-1 border-b pb-14">
                         <span className="text-[32px] ">{item.number}/</span>
                         <h2 className="text-[34px] font-semibold w-[200px] text-[#112A76]">
                             {item.title}
@@ -24,9 +18,9 @@ export const Advantages = () => {
                         </p>
                     </div>
                 ))}
-
-
             </div>
         </section>
-    )
-}
+    );
+};
+
+;
