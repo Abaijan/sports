@@ -16,7 +16,7 @@ body{
 }
 @layer components {
     .container{
-        @apply mx-auto  md:px-4;
+        @apply mx-auto max-w-[1440px];
     }
 }
 .red{

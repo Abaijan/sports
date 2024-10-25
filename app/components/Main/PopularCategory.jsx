@@ -1,15 +1,10 @@
-'use client'
-import {useEffect, useState} from "react";
-import dynamicFetch from "@/hooks/fetch";
+
 import Image from "next/image";
 import black from '@/app/assets/images/black.jpg'
-export const PopularCategory = () => {
-    const [card, setCard] = useState([]);
+import dynamicFetch from "@/hooks/fetch";
 
-    useEffect(() => {
-        dynamicFetch('/popularCategories').then(res => setCard(res));
-    }, []);
-    const style = card.length * 340
+export const PopularCategory = async () => {
+    const card = await dynamicFetch('/popularCategories')
     return(
         <section className="container flex flex-col my-[80px] gap-[20px]">
             <section className="flex justify-between">

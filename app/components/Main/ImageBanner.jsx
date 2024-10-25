@@ -1,15 +1,7 @@
-'use client'
-import Image from "next/image";
-import {useEffect, useState} from "react";
 import dynamicFetch from "@/hooks/fetch";
 
-export const ImageBanner = () => {
-    const [banner, setBanner] = useState([]);
-
-    useEffect(() => {
-        dynamicFetch('/main_banner').then(res => setBanner(res));
-    }, []);
-    console.log(banner)
+export const ImageBanner = async () => {
+    const banner = await dynamicFetch('/main-banner')
     return (
         <section  >
             {

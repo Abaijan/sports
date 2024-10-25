@@ -1,15 +1,8 @@
-'use client'
 import { Card} from "@/app/components";
-import { useEffect, useState} from "react";
 import dynamicFetch from "@/hooks/fetch";
-export const New = () => {
-    const [carts, setCarts] = useState([]);
-
-    useEffect(() => {
-        dynamicFetch('/new').then(data => setCarts(data));
-    }, []);
+export const New = async  () => {
+   const carts = await dynamicFetch('/new')
     const cartsStyle = carts * 345;
-
     return(
         <section className="container flex flex-col my-[80px] gap-[20px]">
             <section className="flex justify-between">

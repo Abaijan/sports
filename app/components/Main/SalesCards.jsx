@@ -1,13 +1,8 @@
-'use client'
-import {useEffect, useState} from "react";
+
 import dynamicFetch from "@/hooks/fetch";
 
-export const SalesCards = () => {
-    const [blocks, setBlocks] = useState([]);
-
-    useEffect(() => {
-        dynamicFetch('/sales_cards').then(res => setBlocks(res));
-    }, []);
+export const SalesCards =  async () => {
+    const blocks = await dynamicFetch('/sales_card');
     return(
         <section className="container py-[70px] flex gap-[20px] justify-between">
             {

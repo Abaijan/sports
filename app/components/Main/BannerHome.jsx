@@ -1,19 +1,13 @@
 
-'use client'
+
 import banner from '../../../assets/images/bannerHome.svg'
 import Image from "next/image";
-import { useState, useEffect} from "react";
 import dynamicFetch from "@/hooks/fetch";
 
 const fetchKey = '/bannerItems';
 
-export const BannerHome =  () => {
-    const [initialData, setInitialData] = useState(null);
-
-    useEffect(() => {
-        dynamicFetch(fetchKey).then(res => setInitialData(res));
-    }, []);
-    console.log(initialData)
+export const BannerHome = async () => {
+    // const banners = await dynamicFetch(fetchKey)
 
 
     return (
