@@ -13,16 +13,20 @@
     font-family: Impact , 'sans-serif';
 }
 
+
 body{
     font-family: 'Manrope', sans-serif;
 }
 @layer components {
     .container{
-        @apply mx-auto  md:px-4;
+        @apply mx-auto max-w-[1440px];
     }
 }
 .red{
     color: #FF0000;
+}
+.impact{
+    font-family: Impact, sans-serif;
 }
 
 .white{

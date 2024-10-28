@@ -1,19 +1,13 @@
 
-'use client'
+
 import banner from '../../../assets/images/bannerHome.svg'
 import Image from "next/image";
-import { useState, useEffect} from "react";
 import dynamicFetch from "@/hooks/fetch";
 
 const fetchKey = '/bannerItems';
 
-export const BannerHome =  () => {
-    const [initialData, setInitialData] = useState(null);
-
-    useEffect(() => {
-        dynamicFetch(fetchKey).then(res => setInitialData(res));
-    }, []);
-    console.log(initialData)
+export const BannerHome = async () => {
+    // const banners = await dynamicFetch(fetchKey)
 
 
     return (
@@ -28,7 +22,21 @@ export const BannerHome =  () => {
                     <section className="swiper">
                     </section>
                 </section>
-                <section className="bg-repeat-no-repeat bg-center w-[60%]" style={{backgroundImage: `url('../../../../../assets/images/bannerHome.svg')`}}>
+      
+      
+      
+
+                <section className="bg-repeat-no-repeat overflow-hidden bg-center w-[65%] relative ">
+                    <Image
+                        className="w-[1000px] h-[800px] top-[40px] absolute   "
+                        src={banner}
+                        alt="background"
+                        width={400}
+                        height={400}
+                    />
+                    <section className="swiper ">
+              
+
                 </section>
             </section>
         </section>
