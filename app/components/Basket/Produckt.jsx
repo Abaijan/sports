@@ -7,8 +7,7 @@ import { Module } from '../module/Module'
 export function Produckt() {
   return (
     <section>
-        <section className='container '>   
-        <Module/>
+        <section className='container '>
             <section className=' p-10 '>
                 <h2 className=' text-4xl font-bold'>Корзина покупок</h2>
             </section>
@@ -19,17 +18,17 @@ export function Produckt() {
                 <section className='cards p-5'>
                     <section className='card-one flex bg-slate-100 p-5 rounded-xl w-2/2'>
                         <section className='produckt-phohto'>
-                            <Image src={imageProduct} alt='produckt phohto' className=' rounded-xl'/>
+                            <Image src={imageProduct} alt='produckt phohto' className='rounded-xl'/>
                         </section>
                         <section className=' flex flex-col justify-between p-5'>
                                 <h2 className='produckt-name text-2xl'>Спортивные штаны для активного отдыха "SportFit Pro" (унисекс)</h2>
                                 <span className='light-size'>
-                                   <h4 className='light'>чорный</h4>
+                                   <h4 className='text-xl font-thin light'>Черный</h4>
                                    <h4 className='size'>ХХL</h4>
                                 </span>
                                 <span className=' flex justify-center flex-col'>
-                                <input type="range" min="0" max="100" value="50" class="w-1/4 h-2 bg-blue-200 accent-blue-700 rounded-lg cursor-pointer" />
-                                 <div class="text-xl text-blue-700 mt-3">50</div>
+                                <input type="range" min="0" max="100"  className="w-1/4 h-2 bg-blue-200 accent-blue-700 rounded-lg cursor-pointer" />
+                                 <div className="text-xl text-blue-700 mt-3">50</div>
                                 </span>
                         </section>
                         <section className='delete-produckt flex flex-col justify-between text-center'>
@@ -44,12 +43,12 @@ export function Produckt() {
                         <section className=' flex flex-col justify-between p-5'>
                                 <h2 className='produckt-name text-2xl'>Спортивные штаны для активного отдыха "SportFit Pro" (унисекс)</h2>
                                 <span className='light-size'>
-                                   <h4 className='light'>чорный</h4>
+                                 <h4 className='text-xl font-thin light'>Черный</h4>
                                    <h4 className='size'>ХХL</h4>
                                 </span>
                                 <span className=' flex justify-center flex-col'>
-                                <input type="range" min="0" max="100" value="50" class="w-1/4 h-2 bg-blue-200 accent-blue-700 rounded-lg cursor-pointer" />
-                                 <div class="text-xl text-blue-700 mt-3">50</div>
+                                <input type="range" min="0" max="100"  className="w-1/4 h-2 bg-blue-200 accent-blue-700 rounded-lg cursor-pointer" />
+                                 <div className="text-xl text-blue-700 mt-3">50</div>
                                 </span>
                         </section>
                         <section className='delete-produckt flex flex-col justify-between text-center'>
@@ -63,12 +62,12 @@ export function Produckt() {
                         </section>
                         <section className=' flex flex-col justify-between p-5'>
                                 <h2 className='produckt-name text-2xl'>Спортивные штаны для активного отдыха "SportFit Pro" (унисекс)</h2>
-                                <span className='light-size'>
-                                   <h4 className='light'>чорный</h4>
+                            <span className='light-size'>
+                                   <h4 className='text-xl font-thin light'>Черный</h4>
                                    <h4 className='size'>ХХL</h4>
                                 </span>
-                                <span className=' flex justify-center flex-col'>
-                                <input type="range" min="0" max="100" value="50" class="w-1/4 h-2 bg-blue-200 accent-blue-700 rounded-lg cursor-pointer" />
+                            <span className=' flex justify-center flex-col'>
+                                <input type="range" min="0" max="100" class="w-1/4 h-2 bg-blue-200 accent-blue-700 rounded-lg cursor-pointer" />
                                  <div class="text-xl text-blue-700 mt-3">50</div>
                                 </span>
                         </section>
