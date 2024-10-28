@@ -2,7 +2,6 @@ import React from 'react'
 import Image from 'next/image'
 
 import imageProduct from '../../assets/images/image72.png'
-import { Module } from '../module/Module'
 
 export function Produckt() {
   return (

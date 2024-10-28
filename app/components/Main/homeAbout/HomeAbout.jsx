@@ -3,8 +3,6 @@ import Image from 'next/image'
 import imagesAbuot from '../../../assets/images/image61.png'
 
 
-// components/HomeAbout.js
-
  export const HomeAbout = () => {
   return (
     <section className="bg-gray-100 py-10">
