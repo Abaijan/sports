@@ -1,9 +1,9 @@
-import react from "react";
+import {Produckt} from '../components/Basket/Produckt'
 
 export default function Basket() {
     return (
         <section>
-            <h1>Basket</h1>
+            <Produckt/>
         </section>
     );
 }

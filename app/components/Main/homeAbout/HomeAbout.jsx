@@ -5,7 +5,7 @@ import imagesAbuot from '../../../assets/images/image61.png'
 
 // components/HomeAbout.js
 
-const HomeAbout = () => {
+ export const HomeAbout = () => {
   return (
     <section className="bg-gray-100 py-10">
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center">
@@ -39,5 +39,4 @@ const HomeAbout = () => {
   );
 };
 
-export default HomeAbout;
 

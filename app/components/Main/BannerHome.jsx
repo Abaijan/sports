@@ -26,35 +26,9 @@ export const BannerHome =  () => {
                     <p className="leading-25 text-[19px]">Экипировка для побед: будь готов к любым вершинам</p>
                     <button className="px-8 py-3 bg-[#DBFF00] color-black rounded-2xl max-w-[200px] text-black">Купить</button>
                     <section className="swiper">
-                        {/*swiper buttons*/}
                     </section>
                 </section>
-
-                <section className="bg-repeat-no-repeat overflow-hidden bg-center w-[65%] relative ">
-                    <Image
-                        className="w-[1000px] h-[800px] top-[40px] absolute   "
-                        src={banner}
-                        alt="background"
-                        width={400}
-                        height={400}
-                    />
-                    <section className="swiper ">
-                        {
-                            initialData && initialData.map(item => {
-                                return (
-                                    <Image
-                                        key={item.id}
-                                        className="w-[1000px] h-[800px] top-[40px] absolute   "
-                                        src={item.image}
-                                        alt="banner"
-                                        width={400}
-                                        height={400}
-                                    />
-                                )
-                            })
-
-                        }
-                    </section>
+                <section className="bg-repeat-no-repeat bg-center w-[60%]" style={{backgroundImage: `url('../../../../../assets/images/bannerHome.svg')`}}>
 
                 </section>
             </section>

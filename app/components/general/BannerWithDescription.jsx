@@ -7,7 +7,7 @@ export function BannerWithDescription() {
          <div className={`relative h-96 flex items-center justify-center ${styles.banner}`}>
            <div className='absolute inset-0 bg-black opacity-30'></div>
              <div className='relative text-center text-white z-10'> 
-                <h2 className='text-2xl font-bold mb-4'>
+                <h2 className='text-2xl font-bold mb-4 p-10'>
                   Мы — команда, которая любит спорт и знает, что нужно для эффективных тренировок.
                   В нашем магазине представлены лучшие спорт
                 </h2>
