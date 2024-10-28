@@ -5,14 +5,9 @@ export  function Module() {
     <section>
         <section className='container'>
         <section class="max-w-md mx-auto p-6 bg-white border border-gray-200 rounded-lg shadow-md">
-          <label class="flex items-center mb-4 cursor-pointer">
-            <input type="checkbox" class="peer sr-only" />
-            <span class="py-2 px-4 bg-blue-600 text-white font-semibold rounded-md shadow hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-              Показать форму
-            </span>
-          </label>
 
-            <div class="hidden peer-checked:block">
+
+            <div class=" peer-checked:block">
               <h2 class="text-2xl font-semibold text-center text-gray-800 mb-2">Форма</h2>
               <p class="text-sm text-gray-600 text-center mb-4">Заполните данные ниже:</p>
               
