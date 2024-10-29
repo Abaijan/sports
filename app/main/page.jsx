@@ -13,7 +13,7 @@ import {Videomaterials} from "@/app/components/AboutUs/Materials/Videomaterials"
 
 export default function Main(){
 
-    console.log(0.3 + 0.3 === 0.6)
+
 
     return (
         <section id="main">

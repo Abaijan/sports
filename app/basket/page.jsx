@@ -1,9 +1,9 @@
-import {Produckt} from '../components/Basket/Produckt'
+import {Basket} from "@/app/components";
 
-export default function Basket() {
+export default function BasketPage() {
     return (
         <section>
-            <Produckt/>
+            <Basket/>
         </section>
     );
 }
