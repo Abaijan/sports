@@ -28,3 +28,4 @@ export { WholeForm } from "@/app/components/wholesalepurchase/WholeForm"
 
 //modals
 export { ModalWindow } from "@/app/components/modalWindows/Module"
+export { Basket } from "@/app/components/Basket/Basket"
