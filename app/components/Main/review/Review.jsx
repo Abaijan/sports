@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 import Photo from '../../../assets/images/image61.png';
 

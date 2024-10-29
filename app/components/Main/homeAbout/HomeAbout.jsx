@@ -3,7 +3,6 @@ import Image from 'next/image'
 import imagesAbout from '../../../assets/images/image61.png'
 
 
-// components/HomeAbout.js
 
 export const HomeAbout = () => {
   return (
@@ -40,6 +39,5 @@ export const HomeAbout = () => {
     </section>
   );
 };
-
 
 
