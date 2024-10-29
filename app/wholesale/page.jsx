@@ -1,9 +1,4 @@
-import react from "react";
-import { HomeWholesale } from "../components/wholesalepurchase/HomeWholesale";
-import { Discount } from "../components/wholesalepurchase/Discount";
-import { Explanation } from "../components/AboutUs/explanation/Explanation";
-import { ProducktCards } from "../components/wholesalepurchase/ProducktCards";
-import { Module } from "../components/module/Module";
+import {Discount, Explanation, ProductCards, ModalWindow, HomeWholesale, WholeForm} from "@/app/components";
 
 export default function Page() {
     return (
@@ -11,8 +6,8 @@ export default function Page() {
             <HomeWholesale/>
             <Discount/>
             <Explanation/>
-            <ProducktCards/>
-            <Module/>
+            <ProductCards/>
+            <WholeForm/>
         </section>
     );
 }

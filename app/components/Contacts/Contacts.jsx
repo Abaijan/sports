@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import imgMap from '../../assets/images/image77.png'
-import { Module } from '../module/Module'
+import { Module } from '../modalWindows/Module'
 
 export function Contacts() {
   return (

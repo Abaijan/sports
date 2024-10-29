@@ -18,3 +18,13 @@ export { BannerWithDescription} from "@/app/components/general/BannerWithDescrip
 
 //card
 export  { Card } from "@/app/components/Card/Card";
+
+//whole sales
+export { Discount } from "@/app/components/wholesalepurchase/Discount"
+export { Explanation } from "@/app/components/AboutUs/explanation/Explanation"
+export { ProductCards  } from "@/app/components/wholesalepurchase/ProducktCards"
+export { HomeWholesale } from "@/app/components/wholesalepurchase/HomeWholesale"
+export { WholeForm } from "@/app/components/wholesalepurchase/WholeForm"
+
+//modals
+export { ModalWindow } from "@/app/components/modalWindows/Module"
