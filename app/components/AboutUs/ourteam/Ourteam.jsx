@@ -14,37 +14,37 @@ export function Ourteam() {
                     <section className="overflow-x-auto flex space-x-4 p-4">
                         <section
                             className="min-w-[300px] h-[300px] rounded-lg flex flex-col items-start justify-center p-5">
-                            <Image src={imagesTeam} alt="Aki Sam" class="rounded-xl"/>
+                            <Image src={imagesTeam} alt="Aki Sam" className="rounded-xl"/>
                             <p className="font-semibold">Aki Sam</p>
                             <p className="text-gray-500">CEO</p>
                         </section>
                         <section
                             className="min-w-[300px] h-[300px] rounded-lg flex flex-col items-start justify-center p-5">
-                            <Image src={imagesTeam} alt="Aki Sam" class="rounded-xl"/>
+                            <Image src={imagesTeam} alt="Aki Sam" className="rounded-xl"/>
                             <p className="font-semibold">Aki Sam</p>
                             <p className="text-gray-500">CEO</p>
                         </section>
                         <section
                             className="min-w-[300px] h-[300px] rounded-lg flex flex-col items-start justify-center p-5">
-                            <Image src={imagesTeam} alt="Aki Sam" class="rounded-xl"/>
+                            <Image src={imagesTeam} alt="Aki Sam" className="rounded-xl"/>
                             <p className="font-semibold">Aki Sam</p>
                             <p className="text-gray-500">CEO</p>
                         </section>
                         <section
                             className="min-w-[300px] h-[300px] rounded-lg flex flex-col items-start justify-center p-5">
-                            <Image src={imagesTeam} alt="Aki Sam" class="rounded-xl"/>
+                            <Image src={imagesTeam} alt="Aki Sam" className="rounded-xl"/>
                             <p className="font-semibold">Aki Sam</p>
                             <p className="text-gray-500">CEO</p>
                         </section>
                         <section
                             className="min-w-[300px] h-[300px] rounded-lg flex flex-col items-start justify-center p-5">
-                            <Image src={imagesTeam} alt="Aki Sam" class="rounded-xl"/>
+                            <Image src={imagesTeam} alt="Aki Sam" className="rounded-xl"/>
                             <p className="font-semibold">Aki Sam</p>
                             <p className="text-gray-500">CEO</p>
                         </section>
                         <section
                             className="min-w-[300px] h-[300px] rounded-lg flex flex-col items-start justify-center p-5">
-                            <Image src={imagesTeam} alt="Aki Sam" class="rounded-xl"/>
+                            <Image src={imagesTeam} alt="Aki Sam" className="rounded-xl"/>
                             <p className="font-semibold">Aki Sam</p>
                             <p className="text-gray-500">CEO</p>
                         </section>
