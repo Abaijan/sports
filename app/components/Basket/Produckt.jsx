@@ -66,8 +66,8 @@ export function Produckt() {
                                    <h4 className='size'>ХХL</h4>
                                 </span>
                             <span className=' flex justify-center flex-col'>
-                                <input type="range" min="0" max="100" class="w-1/4 h-2 bg-blue-200 accent-blue-700 rounded-lg cursor-pointer" />
-                                 <div class="text-xl text-blue-700 mt-3">50</div>
+                                <input type="range" min="0" max="100" className="w-1/4 h-2 bg-blue-200 accent-blue-700 rounded-lg cursor-pointer" />
+                                 <div className="text-xl text-blue-700 mt-3">50</div>
                                 </span>
                         </section>
                         <section className='delete-produckt flex flex-col justify-between text-center'>

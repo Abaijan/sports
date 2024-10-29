@@ -5,7 +5,7 @@ import imgVideo from '../../../assets/images/image69.png'
 
 export function Videomaterials() {
   return (
-    <section section className=''>
+    <section  className=''>
         <section className='container'>
                 <h2 className=' text-3xl mt-10 p-5'>Видео материялы</h2>
             <section className='video-content flex justify-around p-5'>
