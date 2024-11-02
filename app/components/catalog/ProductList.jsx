@@ -9,7 +9,6 @@ export const ProductList = async () => {
                 filteredItems.map((item, index ) => (
                     <Card key={index} prop={item}/>
                 ))
-
             }
         </section>
     )
