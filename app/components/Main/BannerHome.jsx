@@ -35,13 +35,11 @@ export const BannerHome = async () => {
                         height={400}
                     />
                     <section className="swiper ">
-              
-
+                </section>
                 </section>
             </section>
         </section>
 
     );
 
-};
-
+}
