@@ -2,67 +2,91 @@
     "products": [
         {
             "id": 1,
-            "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+            "title": "Шорты женские",
             "price": 109.95,
             "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
             "category": "men's clothing",
-            "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+            "main_image": "https://i.postimg.cc/NfyxkByW/temp-Image-XNY1z-Z.avif",
+            "available_colors": ["#ff0000", "#00ff00", "#0000ff"],
+            "available_sizes": ["S", "M", "L"],
+            "images": ["https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg", "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"]
         },
         {
             "id": 2,
-            "title": "Mens Casual Premium Slim Fit T-Shirts ",
-            "price": 22.3,
-            "description": "Slim-fitting style, contrast raglan long sleeve, three-button henley front, light weight & soft fabric for breathable and comfortable wearing. And Oklahoman graphical tees make for easy match with your favorite shorts, jeans, and joggers for a cool, casual look",
+            "title": "Шорты женские",
+            "price": 100.95,
+            "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
             "category": "men's clothing",
-            "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_SY879._SX._UX._SY._UY_.jpg"
+            "main_image": "https://i.postimg.cc/xjZvChsg/temp-Image-BYKGU7.avif",
+            "available_colors": ["#ff0000", "#00ff00", "#0000ff"],
+            "available_sizes": ["S", "M", "L"],
+            "images": ["https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg", "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"]
         },
         {
             "id": 3,
-            "title": "Mens Cotton Jacket",
-            "price": 55.99,
-            "description": "great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, and daily life. Good gift choice for you or your family member. A warm hearted love to Father, husband or son in the coming Winter season.",
-            "category": "men's clothing",
-            "image": "https://fakestoreapi.com/img/71H9zFAIogL._AC_SX679._SX._UX._SY._UY_.jpg"
+            "title": "Шорты женские",
+            "price": 100.95,
+            "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+            "category": "women's clothing",
+            "main_image": "https://i.postimg.cc/9QdZLMcN/temp-Imagevmj-Ei-C.avif",
+            "available_colors": ["#ff0000", "#00ff00", "#0000ff"],
+            "available_sizes": ["S", "M", "L"],
+            "images": ["https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg", "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"]
         },
         {
             "id": 4,
-            "title": "John Hardy Women's Legends Naga Gold Chain Bracelet",
-            "price": 695,
-            "description": "From our Legends Collection, the Naga was inspired by the mythical water dragon that possesses good fortune and prosperity. Wear facing inward to be reminded of your personal strength and courage or outward to share your confidence with others.",
-            "category": "jewelery",
-            "image": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg"
+            "title": "Шорты женские",
+            "price": 109.95,
+            "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+            "category": "men's clothing",
+            "main_image": "https://i.postimg.cc/XJJ5NkdT/lite-racer-adapt-7-0-wide-shoes-jpg.avif",
+            "available_colors": ["#ff0000", "#00ff00", "#0000ff"],
+            "available_sizes": ["S", "M", "L"],
+            "images": ["https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg", "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"]
         },
         {
             "id": 5,
-            "title": "Solid Gold Petite Hamsa Pendant Necklace",
-            "price": 168,
-            "description": "10k gold hamsa hand pendant necklace. Delicate necklace with intricate details and a smooth shine. Features a hamsa hand pendant that symbolizes protection and blessings.",
-            "category": "jewelery",
-            "image": "https://fakestoreapi.com/img/61sbMiynV2L._AC_UL640_QL65_ML3_.jpg"
+            "title": "Шорты женские",
+            "price": 109.95,
+            "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+            "category": "men's clothing",
+            "main_image": "https://i.postimg.cc/FFYPDj8W/temp-Image-DQRr-CF.avif",
+            "available_colors": ["#ff0000", "#00ff00", "#0000ff"],
+            "available_sizes": ["S", "M", "L"],
+            "images": ["https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg", "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"]
         },
         {
             "id": 6,
-            "title": "White Gold Plated Swan Pendant",
-            "price": 9.99,
-            "description": "Made from white gold plated metal. The chain is 18 inches long and has a 2 inch extension.",
-            "category": "jewelery",
-            "image": "https://fakestoreapi.com/img/31-0DbIGLUL._AC_SY200_.jpg"
+            "title": "Шорты женские",
+            "price": 109.95,
+            "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+            "category": "men's clothing",
+            "main_image": "https://i.postimg.cc/GhYX1bcv/temp-Imageo-Un-TBn.avif",
+            "available_colors": ["#ff0000", "#00ff00", "#0000ff"],
+            "available_sizes": ["S", "M", "L"],
+            "images": ["https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg", "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"]
         },
         {
             "id": 7,
-            "title": "Pierced Owl Rose Gold Plated Stainless Steel Double",
-            "price": 10.99,
-            "description": "Rose Gold Plated Double Flared Tunnel for Ear Cartilage Piercing. Made from Stainless Steel",
-            "category": "jewelery",
-            "image": "https://fakestoreapi.com/img/51UDEzMJVpL._AC_SY200_.jpg"
+            "title": "Шорты женские",
+            "price": 109.95,
+            "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+            "category": "men's clothing",
+            "main_image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+            "available_colors": ["#ff0000", "#00ff00", "#0000ff"],
+            "available_sizes": ["S", "M", "L"],
+            "images": ["https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg", "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"]
         },
         {
             "id": 8,
-            "title": "WD 2TB Black P10 Game Drive",
-            "price": 139,
-            "description": "Expand your console storage with this sleek external hard drive gaming solution. With 2TB of additional storage, you can save and store more games, plus have room to grow your collection",
-            "category": "electronics",
-            "image": "https://fakestoreapi.com/img/61U7T1koQpL._AC_SX679_.jpg"
+            "title": "Шорты женские",
+            "price": 109.95,
+            "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+            "category": "men's clothing",
+            "main_image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+            "available_colors": ["#ff0000", "#00ff00", "#0000ff"],
+            "available_sizes": ["S", "M", "L"],
+            "images": ["https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg", "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"]
         }
     ],
     "bannerItems": [
@@ -218,5 +242,155 @@
                 "whole_price": 1000,
                 "price": 1400
             }
+    ],
+    "filterParams": [
+        {
+            "id": 1,
+            "name": "Категории",
+            "value": "category",
+            "keys": [
+                {
+                    "name": "Мужская одежда",
+                    "value": "men's clothing"
+                },
+                {
+                    "name": "Женская одежда",
+                    "value": "women's clothing"
+                },
+                {
+                    "name": "Детская одежда",
+                    "value": "children's clothing"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Тип",
+            "value": "type",
+            "keys": [
+                {
+                    "name": "Толстовка",
+                    "value": "jacket"
+                },
+                {
+                    "name": "Рубашка",
+                    "value": "sweater"
+                },
+                {
+                    "name": "Шорты",
+                    "value": "shorts"
+                },
+                {
+                    "name": "Платье",
+                    "value": "dress"
+                },
+                {
+                    "name": "Куртка",
+                    "value": "jacket"
+                },
+                {
+                    "name": "Пальто",
+                    "value": "coat"
+                },
+                {
+                    "name": "Брюки",
+                    "value": "pants"
+                },
+                {
+                    "name": "Спортивная одежда",
+                    "value": "sport"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Размер",
+            "value": "size",
+            "keys": [
+                {
+                    "name": "S",
+                    "value": "S"
+                },
+                {
+                    "name": "M",
+                    "value": "M"
+                },
+                {
+                    "name": "L",
+                    "value": "L"
+                },
+                {
+                    "name": "XL",
+                    "value": "XL"
+                },
+                {
+                    "name": "XXL",
+                    "value": "XXL"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Цвет",
+            "value": "color",
+            "keys": [
+                {
+                    "name": "Красный",
+                    "value": "#ff0000"
+                },
+                {
+                    "name": "Зеленый",
+                    "value": "#00ff00"
+                },
+                {
+                    "name": "Синий",
+                    "value": "#0000ff"
+                },
+                {
+                    "name": "Белый",
+                    "value": "#ffffff"
+                },
+                {
+                    "name": "Черный",
+                    "value": "#000000"
+                },
+                {
+                    "name": "Розовый",
+                    "value": "#ff00ff"
+                },
+                {
+                    "name": "Желтый",
+                    "value": "#ffff00"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Цена",
+            "value": "price",
+            "keys": [
+                {
+                    "name": "До 1000",
+                    "value": "1000"
+                },
+                {
+                    "name": "От 1000 до 3000",
+                    "value": "2000"
+                },
+                {
+                    "name": "От 3000 до 5000",
+                    "value": "3000"
+                },
+                {
+                    "name": "От 5000 до 10 000",
+                    "value": "4000"
+                },
+                {
+                    "name": "От 10000",
+                    "value": "10 000"
+                }
+            ]
+        }
     ]
+
 }

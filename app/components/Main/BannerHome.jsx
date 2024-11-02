@@ -1,14 +1,12 @@
 
 
-import banner from '../../../assets/images/bannerHome.svg'
+import banner from '../../assets/images/bannerHome.svg'
 import Image from "next/image";
 import dynamicFetch from "@/hooks/fetch";
 
 const fetchKey = '/bannerItems';
 
 export const BannerHome = async () => {
-    // const banners = await dynamicFetch(fetchKey)
-
 
     return (
         <section className="blue ">

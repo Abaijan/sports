@@ -20,5 +20,16 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+      function({ addUtilities }) {
+    addUtilities({
+      '.scrollbar-hidden': {
+        'scrollbar-width': 'none', /* Firefox */
+        '-ms-overflow-style': 'none' /* IE и Edge */
+      },
+      '.scrollbar-hidden::-webkit-scrollbar': {
+        display: 'none' /* Chrome, Safari */
+      }
+    });
+  }],
 };

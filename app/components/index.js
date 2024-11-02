@@ -27,4 +27,10 @@ export { HomeWholesale } from "@/app/components/wholesalepurchase/HomeWholesale"
 export { WholeForm } from "@/app/components/wholesalepurchase/WholeForm"
 
 //modals
-export { ModalWindow } from "@/app/components/modalWindows/Module"
+export { ModalWindow } from "@/app/components/modalWindows/Module";
+
+//catalog
+export  { Filter } from "@/app/components/catalog/Filter/Filter";
+export {FilterItem} from "@/app/components/catalog/Filter/FilterItem";
+export { ProductList } from "@/app/components/catalog/ProductList"
+export { SameProducts } from "@/app/components/catalog/SameProducts"
