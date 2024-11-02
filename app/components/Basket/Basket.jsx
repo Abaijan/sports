@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import trash from '@/assets/icons/trash.svg';
+import trash from '@/app/assets/icons/trash.svg';
 import imageProduct from '../../assets/images/image72.png'
 
 export const Basket = () => {
