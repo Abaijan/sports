@@ -1,5 +1,4 @@
 import React from 'react'
-import Map from "@/app/components/Map";
 
 export function Contacts() {
   return (
