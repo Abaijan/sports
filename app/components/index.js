@@ -15,7 +15,7 @@ export { Advantages } from '@/app/components/general/Advantages';
 
 export { BannerWithDescription} from "@/app/components/general/BannerWithDescription";
 
-
+export { Basket } from "@/app/components/Basket/Basket";
 //card
 export  { Card } from "@/app/components/Card/Card";
 
