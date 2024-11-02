@@ -7,7 +7,7 @@ export const FilterItem = ({filterParam}) => {
     const [showFilter, setShowFilter] = useState(true);
     console.log(filterParam)
     return (
-        <section className="flex flex-col gap-[16px] p-[31px]">
+        <section className="flex h-fit flex-col  gap-y-[10px] p-[21px]">
             <div className="flex justify-between items-center">
                 <h2 className="montserrat font-medium  text-[18px]">{filterParam.name}</h2>
                 {
@@ -67,10 +67,10 @@ export const FilterItem = ({filterParam}) => {
 
                     <div
                         key={index}
-                        className={ showFilter ? `flex-col flex transition-transform duration-300  gap-[12px]` : `transition-transform duration-300 hidden`}>
+                        className={ showFilter ? `h-auto opacity-100 transition-all duration-800 flex-col flex   gap-[12px]` : `transition-transform duration-800 h-0  opacity-0`}>
 
                         <label className="flex  items-center gap-2 text-lg font-medium text-gray-800">
-                            <input type="checkbox" className="block w-5 h-5 rounded-sm peer-checked:bg-[#112A76] "/>
+                            <input type="checkbox" className="block w-5 h-full rounded-sm peer-checked:bg-[#112A76] "/>
                             <span className="">{key.name}</span>
                         </label>
                     </div>
