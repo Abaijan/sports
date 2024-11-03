@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import basket from "@/assets/icons/basketIcons.svg";
+import basket from "@/app/assets/icons/basketIcons.svg";
 
 export const Header = () => {
     return (
