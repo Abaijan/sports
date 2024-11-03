@@ -5,7 +5,7 @@ import imgWholesale from '../../assets/images/wholesales.svg'
 export function HomeWholesale() {
   return (
       <section className="relative overflow-hidden">
-          {/* <section className="absolute top-16 -left-32 w-[1400px] z-10 h-[1500px] bg-[#B0C1F4] rounded-full transform"></section>
+          <section className="absolute top-16 -left-32 w-[1400px] z-10 h-[1500px] bg-[#B0C1F4] rounded-full transform"></section>
           <section className='container'>
               <section className=" bg-white   flex  items-center justify-around w-full h-[900px] overflow-hidden">
                   <section className=" z-10 max-w-md p-4">
@@ -24,7 +24,7 @@ export function HomeWholesale() {
                              class="w-full h-full max-w-xs "/>
                   </section>
               </section>
-          </section> */}
+          </section>
       </section>
   )
 }
