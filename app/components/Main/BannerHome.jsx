@@ -27,7 +27,7 @@ export const BannerHome = async () => {
             <section className="bg-repeat-no-repeat z-[1000] overflow-hidden right-1 xl:top-[0%] top-[65%] xl:left-[30%] xl:right-[0%] h-[56%] xl:h-full bg-center w-full xl:w-[75%]  absolute ">
                 <Image
                     className=" w-full h-[1000px]   xl:w-[1500px] z-10   right-0 top-0  xl:h-[1500px] xl:object-contain object-[left_bottom] object-cover absolute "
-                    src={`${banner}`}
+                    src={banner}
                     alt="background"
                     width={400}
                     height={400}
