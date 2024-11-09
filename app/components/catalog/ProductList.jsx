@@ -1,13 +1,14 @@
 import {Card} from "@/app/components";
-import dynamicFetch from "@/hooks/fetch";
 
-export const ProductList = async () => {
-    const filteredItems = await dynamicFetch('/products')
+
+
+export const ProductList =  ({filteredItems}) => {
+
     return (
-        <section className=" mb-[50px] overflow-y-scroll flex gap-y-[30px] gap-x-[30px] flex-wrap ">
+        <section className=" mb-[50px] overflow-y-scroll flex flex-wrap h-fit gap-[10px] xl:gap-[30px]  ">
             {
                 filteredItems.map((item, index ) => (
-                    <Card key={index} prop={item}/>
+                    <Card key={index} prop={item} />
                 ))
             }
         </section>

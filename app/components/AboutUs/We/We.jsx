@@ -1,16 +1,27 @@
+'use client'
 import Image from 'next/image'
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import weimages from '../../../assets/images/Weimage.png'
+import dynamicFetch from "@/hooks/fetch";
 
 export function We() {
+    const [about, setAbout] = useState()
+    useEffect(() => {
+        dynamicFetch('/aboutUs').then(data => setAbout(data));
+    }, []);
   return (
-    <section className="py-[100px]">
+    <section className="xl:py-[100px]">
         <section className='container'>
-            <section className=' flex p-10 mt-10    '>
-                 <p className=' mt-14 w-3/5 font-thin  p-8 text-xl'>Мы — команда, которая любит спорт и знает, что нужно для эффективных тренировок. В нашем магазине представлены лучшие спортивные товары и экипировка, которые подходят как для новичков, так и для профессионалов. Мы предлагаем качественные решения для активной жизни и поддерживаем каждого на пути к здоровью и успеху.</p>
-                <Image src={weimages} alt='We images' className=' rounded-xl'/>
-              </section>
-            </section>
+            {
+                about && about.map((about) => (
+                    <section key={about.id} className=' px-[10px] flex flex-col xl:flex-row xl:p-10 xl:mt-10'>
+                        <p className=' xl:mb-14 xl:w-1/2 font-thin mb-[30px] xl:p-8 text-xl'>{about.description}</p>
+                        <Image width={800} height={500} src={about.image} alt='We images' className='xl:w-1/2 xl:h-[400px] w-full h-[150px] rounded-xl  object-cover xl:rounded-xl'/>
+                    </section>
+                ))
+            }
+
+        </section>
     </section>
   )
 }

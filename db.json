@@ -4,17 +4,19 @@
             "id": 1,
             "title": "Шорты женские",
             "price": 109.95,
+            "type": "shirt",
             "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
             "category": "men's clothing",
             "main_image": "https://i.postimg.cc/NfyxkByW/temp-Image-XNY1z-Z.avif",
             "available_colors": ["#ff0000", "#00ff00", "#0000ff"],
             "available_sizes": ["S", "M", "L"],
-            "images": ["https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg", "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"]
+            "images": ["https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg", "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg", "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg", "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg","https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg","https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"]
         },
         {
             "id": 2,
             "title": "Шорты женские",
             "price": 100.95,
+            "type": "sport",
             "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
             "category": "men's clothing",
             "main_image": "https://i.postimg.cc/xjZvChsg/temp-Image-BYKGU7.avif",
@@ -25,6 +27,7 @@
         {
             "id": 3,
             "title": "Шорты женские",
+            "type": "jacket",
             "price": 100.95,
             "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
             "category": "women's clothing",
@@ -36,9 +39,10 @@
         {
             "id": 4,
             "title": "Шорты женские",
-            "price": 109.95,
+            "price": 500,
+            "type": "dress",
             "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
-            "category": "men's clothing",
+            "category": "children's clothing",
             "main_image": "https://i.postimg.cc/XJJ5NkdT/lite-racer-adapt-7-0-wide-shoes-jpg.avif",
             "available_colors": ["#ff0000", "#00ff00", "#0000ff"],
             "available_sizes": ["S", "M", "L"],
@@ -47,7 +51,7 @@
         {
             "id": 5,
             "title": "Шорты женские",
-            "price": 109.95,
+            "price": 5001,
             "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
             "category": "men's clothing",
             "main_image": "https://i.postimg.cc/FFYPDj8W/temp-Image-DQRr-CF.avif",
@@ -58,7 +62,7 @@
         {
             "id": 6,
             "title": "Шорты женские",
-            "price": 109.95,
+            "price": 3001.95,
             "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
             "category": "men's clothing",
             "main_image": "https://i.postimg.cc/GhYX1bcv/temp-Imageo-Un-TBn.avif",
@@ -69,7 +73,7 @@
         {
             "id": 7,
             "title": "Шорты женские",
-            "price": 109.95,
+            "price": 1000,
             "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
             "category": "men's clothing",
             "main_image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
@@ -80,7 +84,7 @@
         {
             "id": 8,
             "title": "Шорты женские",
-            "price": 109.95,
+            "price": 100000,
             "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
             "category": "men's clothing",
             "main_image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
@@ -278,7 +282,7 @@
                 },
                 {
                     "name": "Шорты",
-                    "value": "shorts"
+                    "value": "shirt"
                 },
                 {
                     "name": "Платье",
@@ -374,22 +378,177 @@
                     "value": "1000"
                 },
                 {
-                    "name": "От 1000 до 3000",
-                    "value": "2000"
-                },
-                {
-                    "name": "От 3000 до 5000",
+                    "name": "до 3000",
                     "value": "3000"
                 },
                 {
-                    "name": "От 5000 до 10 000",
-                    "value": "4000"
+                    "name": "до 5000",
+                    "value": "5000"
+                },
+                {
+                    "name": "до 10 000",
+                    "value": "10000"
                 },
                 {
                     "name": "От 10000",
-                    "value": "10 000"
+                    "value": "10001"
                 }
             ]
+
+        }
+    ],
+    "videos": [
+        {
+            "id": 1,
+            "video": "https://player.vimeo.com/video/1027050821?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+            "title": "Спортивные шорты "
+        },
+        {
+            "id": 2,
+            "video": "https://player.vimeo.com/video/1027052510?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+            "title": "Спортивные шорты "
+        },
+        {
+            "id": 3,
+            "video": "https://player.vimeo.com/video/1027053279?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+            "title": "Спортивные шорты "
+        }
+    ],
+    "reviews": [
+        {
+            "id": 1,
+            "profile_image": "https://i.postimg.cc/XqckCVYt/temp-Image-JE77y6.avif",
+            "name": "John Doe",
+            "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae. "
+        },
+        {
+            "id": 2,
+            "profile_image": "https://i.postimg.cc/XqckCVYt/temp-Image-JE77y6.avif",
+            "name": "John Doe",
+            "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae. "
+        },
+        {
+            "id": 3,
+            "profile_image": "https://i.postimg.cc/XqckCVYt/temp-Image-JE77y6.avif",
+            "name": "John Doe",
+            "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae. "
+        }
+    ],
+    "explanation": [
+        {
+            "id": 1,
+            "title": "Почему мы?",
+            "text": "Мы — команда, которая любит спорт и знает, что нужно для эффективных тренировок. В нашем магазине представленыМы — команда, которая любит спорт и знает, что нужно для эффективных тренировок. В нашем магазине представлены"
+        },
+        {
+            "id": 2,
+            "title": "Почему мы?",
+            "text": "Мы — команда, которая любит спорт и знает, что нужно для эффективных тренировок. В нашем магазине представленыМы — команда, которая любит спорт и знает, что нужно для эффективных тренировок. В нашем магазине представлены"
+        },
+        {
+            "id": 3,
+            "title": "Почему мы?",
+            "text": "Мы — команда, которая любит спорт и знает, что нужно для эффективных тренировок. В нашем магазине представленыМы — команда, которая любит спорт и знает, что нужно для эффективных тренировок. В нашем магазине представлены"
+        }
+    ],
+    "aboutUs": [
+        {
+            "id": 1,
+            "description": "Мы — команда, которая любит спорт и знает, что нужно для эффективных тренировок. В нашем магазине представлены лучшие спортивные товары и экипировка, которые подходят как для новичков, так и для профессионалов. Мы предлагаем качественные решения для активной жизни и поддерживаем каждого на пути к здоровью и успеху.",
+            "image":"https://i.postimg.cc/4yXKx3J0/temp-Image-Kn-CIu-E.avif"
+        }
+        ],
+    "ourTeam": [
+        {
+            "id": 1,
+            "image":"https://i.postimg.cc/fLSLW9n5/temp-Image-R4-TBB1.avif" ,
+            "name": "John Doe",
+            "position": "Frontend Developer"
+        },
+        {
+            "id": 2,
+            "image":"https://i.postimg.cc/fLSLW9n5/temp-Image-R4-TBB1.avif" ,
+            "name": "John Doe",
+            "position": "CEO"
+        },
+        {
+            "id": 3,
+            "image":"https://i.postimg.cc/fLSLW9n5/temp-Image-R4-TBB1.avif" ,
+            "name": "John Doe",
+            "position": "Frontend Developer"
+        },
+        {
+            "id": 4,
+            "image":"https://i.postimg.cc/fLSLW9n5/temp-Image-R4-TBB1.avif" ,
+            "name": "John Doe",
+            "position": "CEO"
+        }
+    ],
+    "wholesale_banner": [
+        {
+            "id": 1,
+            "image":"https://i.postimg.cc/ZK2DmdXg/temp-Image3-Fiy-WB.avif",
+            "title": "Оптовые покупки",
+            "description": "Мы — команда, которая любит спорт и знает, что нужно для эффективных тренировок. В нашем магазине представлены лучшие спорт"
+        }
+    ],
+    "discount": [
+        {
+            "id": 1,
+            "title" : "При покупке от 100 штук вы получаете скидку 10%",
+            "description": "Мы — команда, которая любит спорт и знает, что нужно для эффективных тренировок. В нашем магазине представлены лучшие спортивные товары и экипировка, которые подходят как для новичков, так и для профессионалов. Мы предлагаем качественные решения для активной жизни и поддерживаем каждого на пути к здоровью и успеху."
+        }
+    ],
+    "contactPage": [
+        {
+            "id": 1,
+            "title": "Оставьте ваш вопрос или отзыв",
+            "description": "Заполните форму, и наш менеджер свяжется с вами для подтверждения деталей заказа",
+            "name": "Имя",
+            "phone": "Номер телефона",
+            "email": "Email",
+            "message": "Ваш вопрос или отзыв",
+            "button": "Отправить cообщение",
+            "contacts_data": "Контактные данные:",
+            "phone_number": "+7 (123) 456-78-90",
+            "address": "г. Москва, ул. Пушкинская, 123",
+            "office_address": "Адрес офиса:",
+            "working_hours": "Пн-Пт: 10:00 - 20:00",
+            "email_address": "TJz3l@example.com",
+            "contacts": [
+                {
+                    "id": 1,
+                    "image": "https://i.postimg.cc/KvpHBq19/temp-Image-WCWVve.avif",
+                    "name": "call",
+                    "link": "+7 (123) 456-78-90"
+                },
+                {
+                    "id": 2,
+                    "image": "https://i.postimg.cc/RVZY35Z6/temp-Imagev9m-Mph.avif",
+                    "name": "email",
+                    "link": "TJz3l@example.com"
+                },
+                {
+                    "id": 3,
+                    "image": "https://i.postimg.cc/W1DfnGrs/temp-Image-Y5pen-G.avif",
+                    "name": "instagram",
+                    "link": "https://www.instagram.com/abaijan_7"
+                }
+            ]
+
+        }
+
+    ],
+    "basketPage": [
+        {
+            "id": 1,
+            "title": "Корзина покупок",
+            "button": "Оформить заказ",
+            "total": "Итого:",
+            "quantity": "Количество:",
+            "whole_sale": "Оптовая покупка",
+            "description": "При покупке от 100 штук вы получаете скидку 10%",
+            "empty": "Корзина пуста"
         }
     ]
 

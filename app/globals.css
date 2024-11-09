@@ -19,7 +19,7 @@ body{
 }
 @layer components {
     .container{
-        @apply mx-auto max-w-[1440px];
+        @apply mx-auto max-w-[1440px]  xl:px-0;
     }
 }
 .red{
@@ -30,7 +30,7 @@ body{
 }
 
 .white{
-    color: #222222;
+    color: black;
     background-color: #FFFFFF;
 }
 .blue{

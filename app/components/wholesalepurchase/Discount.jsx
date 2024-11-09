@@ -1,15 +1,24 @@
-import React from 'react'
+'use client'
+import React, {useEffect, useState} from 'react'
+import dynamicFetch from "@/hooks/fetch";
 
 export  const  Discount = () =>  {
+    const [discount, setDiscount] = useState([]);
+    useEffect(() => {
+        dynamicFetch('/discount').then(data => setDiscount(data));
+    }, []);
   return (
     <section className="py-[100px]">
-        <section className=' container'>
-            <section className=' flex flex-col justify-center gap-[30px] text-center p-10'>
-                <h2 className=' text-blue-700 text-5xl mx-96'>При покупке от 100 штук вы получаете скидку 10%</h2>
-                <p className=' text-sm mx-72 p-3' >Мы — команда, которая любит спорт и знает, что нужно для эффективных тренировок.
-                     В нашем магазине представлены лучшие спортивные товары и экипировка, которые подходят как для новичков,
-                      так и для профессионалов. Мы предлагаем качественные решения для активной жизни и поддерживаем каждого на пути к здоровью и успеху.</p>
-            </section>
+        <section className='container'>
+            {
+                discount && discount.map((discount) => (
+                    <section key={discount.id} className=' mx-auto xl:w-[800px] flex flex-col justify-center gap-2 p-2 xl:gap-[30px] text-center xl:p-10'>
+                        <h2 className=' text-[30px] leading-[33px] font-bold manrope text-blue-700 xl:text-5xl mx-auto'>{discount.title}</h2>
+                        <p className=' text-sm mx-auto xl:text-xl font-thin manrope xl:p-3'>{discount.description}</p>
+                    </section>
+                ))
+            }
+
         </section>
     </section>
   )

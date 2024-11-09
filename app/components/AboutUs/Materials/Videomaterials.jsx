@@ -1,21 +1,42 @@
+'use client'
 import Image from 'next/image'
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import imgVideotwo from '../../../assets/images/image.png'
 import imgVideo from '../../../assets/images/image69.png'
+import dynamicFetch from "@/hooks/fetch";
+import {ModalVideos} from "@/app/components/modalWindows/ModalVideos";
+
+const fetchKey = '/videos';
 
 export function Videomaterials() {
+    const [videos, setVideos] = useState([]);
+    const [video, setVideo] = useState(false);
+    useEffect(() => {
+        dynamicFetch(fetchKey).then(data => setVideos(data));
+    }, []);
+
+    const videoOpen = (video) => {
+        return (
+            <ModalVideos param={video} setShowModal={setVideo}/>
+        )
+    }
+
   return (
     <section  className=''>
         <section className='container'>
-                <h2 className=' text-4xl impact  mt-10 p-5'>Видео материялы</h2>
-            <section className='video-content flex justify-around p-5'>
-                    <Image src={imgVideotwo} alt='video' className='w-1/2 h-full p-1 rounded-2xl '/>
-                <section className="w-1/2 flex flex-col ">
-                    <Image src={imgVideo} alt='video' className=' w-full p-1 rounded-xl'/>
-                    <Image src={imgVideo} alt='video' className=' w-full h-1/3 p-1 rounded-xl'/>
-                </section>
-            </section>    
-        </section>    
+                <h2 className=' text-4xl impact  mt-10 p-5'>Видео материалы</h2>
+            <section className='video-content grid grid-cols-1 xl:grid-cols-2 p-5'>
+
+                {
+                  videos &&  videos.map((video) => (
+                        <div onClick={() => setVideo(true)} key={video.id} className="w-full">
+                            <Image  src={imgVideotwo} alt='video' className='xl:w-1/2 w-full object-cover object-top h-[200px] xl:h-full p-1 rounded-2xl '/>
+                        </div>
+                    ))
+
+                }
+            </section>
+        </section>
      </section>
   )
 }

@@ -5,6 +5,7 @@ import { We } from "../components/AboutUs/We/We";
 import { Ourteam } from "../components/AboutUs/ourteam/Ourteam";
 import { BannerWithDescription } from "../components/general/BannerWithDescription";
 import { Videomaterials } from "../components/AboutUs/Materials/Videomaterials";
+import {Advantages} from "@/app/components";
 
 export default function About() {
     return (
@@ -14,6 +15,7 @@ export default function About() {
              <We/>
              <Ourteam/>
              <BannerWithDescription/>
+            <Advantages/>
              <Videomaterials/>
         </section>
     );

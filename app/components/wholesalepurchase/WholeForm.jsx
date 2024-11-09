@@ -5,7 +5,7 @@ export const WholeForm = () => {
         <section className="py-[100px]">
             <section className="w-full bg-[#B0C1F4]">
                 <section className="container">
-                    <section className="py-[50px] mx-auto ">
+                    <section className="py-[50px] mx-[15px] xl:mx-auto ">
                         <ModalWindow/>
                     </section>
                 </section>
