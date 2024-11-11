@@ -23,20 +23,26 @@ export function Videomaterials() {
 
   return (
     <section  className=''>
-        <section className='container'>
-                <h2 className=' text-4xl impact  mt-10 p-5'>Видео материалы</h2>
-            <section className='video-content grid grid-cols-1 xl:grid-cols-2 p-5'>
+        {
+            videos.map((video, index) => (
+                <section key={index} className='container'>
+                    <h2 className=' text-4xl impact  mt-10 p-5'>{video.title}</h2>
+                    <section className='video-content grid grid-cols-1 xl:grid-cols-2 p-5'>
 
-                {
-                  videos &&  videos.map((video) => (
-                        <div onClick={() => setVideo(true)} key={video.id} className="w-full">
-                            <Image  src={imgVideotwo} alt='video' className='xl:w-1/2 w-full object-cover object-top h-[200px] xl:h-full p-1 rounded-2xl '/>
-                        </div>
-                    ))
+                        {
+                            video.video_materials?.map((video) => (
+                                <div onClick={() => setVideo(true)} key={video.id} className="w-full">
+                                    <Image src={imgVideotwo} alt='video'
+                                           className='xl:w-1/2 w-full object-cover object-top h-[200px] xl:h-full p-1 rounded-2xl '/>
+                                </div>
+                            ))
 
-                }
-            </section>
-        </section>
-     </section>
+                        }
+                    </section>
+                </section>
+            ))
+        }
+
+    </section>
   )
 }

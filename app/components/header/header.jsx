@@ -2,8 +2,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import basket from "@/app/assets/icons/basketIconWhite.svg";
-import {usePathname, useRouter} from "next/navigation";
-import {useState} from "react";
+import {usePathname} from "next/navigation";
+import { useState} from "react";
 import {HeaderBurger} from "@/app/components/header/HeaderBurger";
 
 export const Header = () => {
@@ -12,11 +12,12 @@ export const Header = () => {
     function handleClick() {
         setBurgerOpen(!burgerOpen)
     }
+    const windowSize = window.innerWidth;
+
 
     const param = usePathname();
-    console.log(param)
     return (
-        <header className={`  lg:blue  ${param  === '/main' ? 'blue' : 'white'} px-[10px] xl:px-0 w-full`} >
+        <header className={`    ${ windowSize > 510  ? 'blue' :  windowSize < 510 && param !== '/main' ? 'white' : 'blue'} px-[10px] xl:px-0 w-full`} >
             <section className="container flex justify-between ">
                 <nav className="h-[80px] flex gap-16 monrope items-center w-full text-[16px] justify-between lg:hidden">
                     <Link href="/"><p className="text-3xl  font-bold">LOGO</p></Link>

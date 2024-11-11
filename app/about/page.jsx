@@ -1,9 +1,8 @@
-import react from "react";
 import { Aboutlogo } from '../components/AboutUs/aboutlogo/Aboutlogo';
-import { Explanation } from "../components/AboutUs/explanation/Explanation";
+import { Explanation } from "@/app/components";
 import { We } from "../components/AboutUs/We/We";
 import { Ourteam } from "../components/AboutUs/ourteam/Ourteam";
-import { BannerWithDescription } from "../components/general/BannerWithDescription";
+import { BannerWithDescription } from "@/app/components";
 import { Videomaterials } from "../components/AboutUs/Materials/Videomaterials";
 import {Advantages} from "@/app/components";
 

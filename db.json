@@ -139,29 +139,36 @@
     ],
     "popularCategories": [
         {
-            "id": 1,
-            "image": "https://i.postimg.cc/52MMqJ5n/temp-Image-GJ6-Hl-J.avif",
-            "description": "Спортивная одежда"
+            "title" : "Популярные категории"
         },
         {
-            "id": 2,
-            "image": "https://i.postimg.cc/Bb62VRxz/temp-Image-Y3wd-Xu.avif",
-            "description": "Женская одежда"
-        },
-        {
-            "id": 3,
-            "image": "https://i.postimg.cc/vHC50qDP/temp-Imagek-YFf-Gj.avif",
-            "description": "Мужская одежда"
-        },
-        {
-            "id": 4,
-            "image": "https://i.postimg.cc/brs2TkPc/temp-Image-V3qem-O.avif",
-            "description": "Обувь"
-        },
-        {
-            "id": 5,
-            "image": "https://i.postimg.cc/tRYDqmZ5/temp-Image742-F6-L.avif",
-            "description": "Детская одежда"
+            "products" : [
+                {
+                    "id": 1,
+                    "image": "https://i.postimg.cc/52MMqJ5n/temp-Image-GJ6-Hl-J.avif",
+                    "description": "Спортивная одежда"
+                },
+                {
+                    "id": 2,
+                    "image": "https://i.postimg.cc/Bb62VRxz/temp-Image-Y3wd-Xu.avif",
+                    "description": "Женская одежда"
+                },
+                {
+                    "id": 3,
+                    "image": "https://i.postimg.cc/vHC50qDP/temp-Imagek-YFf-Gj.avif",
+                    "description": "Мужская одежда"
+                },
+                {
+                    "id": 4,
+                    "image": "https://i.postimg.cc/brs2TkPc/temp-Image-V3qem-O.avif",
+                    "description": "Обувь"
+                },
+                {
+                    "id": 5,
+                    "image": "https://i.postimg.cc/tRYDqmZ5/temp-Image742-F6-L.avif",
+                    "description": "Детская одежда"
+                }
+            ]
         }
     ],
     "main_banner": [
@@ -185,22 +192,29 @@
     ],
     "advantages": [
         {
-            "id": 1,
-            "number": 1,
-            "title": "Широкий ассортимент",
-            "description": "Мы — команда, которая любит спорт и знает, что нужно для эффективных тренировок. В нашем магазине представлены лучшие спорт"
+            "title" : "advantages"
         },
         {
-            "id": 2,
-            "number": 2,
-            "title": "Высокое качество",
-            "description": "Мы — команда, которая любит спорт и знает, что нужно для эффективных тренировок. В нашем магазине представлены лучшие спорт"
-        },
-        {
-            "id": 3,
-            "number": 3,
-            "title": "Быстрая доставка",
-            "description": "Мы — команда, которая любит спорт и знает, что нужно для эффективных тренировок. В нашем магазине представлены лучшие спорт"
+            "advantages": [
+                {
+                    "id": 1,
+                    "number": 1,
+                    "title": "Широкий ассортимент",
+                    "description": "Мы — команда, которая любит спорт и знает, что нужно для эффективных тренировок. В нашем магазине представлены лучшие спорт"
+                },
+                {
+                    "id": 2,
+                    "number": 2,
+                    "title": "Высокое качество",
+                    "description": "Мы — команда, которая любит спорт и знает, что нужно для эффективных тренировок. В нашем магазине представлены лучшие спорт"
+                },
+                {
+                    "id": 3,
+                    "number": 3,
+                    "title": "Быстрая доставка",
+                    "description": "Мы — команда, которая любит спорт и знает, что нужно для эффективных тренировок. В нашем магазине представлены лучшие спорт"
+                }
+            ]
         }
     ],
     "whole_sale": [
@@ -399,19 +413,26 @@
     ],
     "videos": [
         {
-            "id": 1,
-            "video": "https://player.vimeo.com/video/1027050821?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-            "title": "Спортивные шорты "
+            "title": "Видео материялы"
         },
         {
-            "id": 2,
-            "video": "https://player.vimeo.com/video/1027052510?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-            "title": "Спортивные шорты "
-        },
-        {
-            "id": 3,
-            "video": "https://player.vimeo.com/video/1027053279?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-            "title": "Спортивные шорты "
+            "video_materials": [
+                {
+                    "id": 1,
+                    "video": "https://player.vimeo.com/video/1027050821?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+                    "title": "Спортивные шорты "
+                },
+                {
+                    "id": 2,
+                    "video": "https://player.vimeo.com/video/1027052510?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+                    "title": "Спортивные шорты "
+                },
+                {
+                    "id": 3,
+                    "video": "https://player.vimeo.com/video/1027053279?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+                    "title": "Спортивные шорты "
+                }
+            ]
         }
     ],
     "reviews": [
@@ -549,6 +570,43 @@
             "whole_sale": "Оптовая покупка",
             "description": "При покупке от 100 штук вы получаете скидку 10%",
             "empty": "Корзина пуста"
+        }
+    ],
+    "main_page": [
+        {
+            "id": 1,
+            "title": "Движение в стиле",
+            "subtitle": "Экипировка для побед: будь готов к любым вершинам",
+            "button": "Купить",
+            "about_title": "О нас",
+            "about_description": "Мы — команда, которая любит спорт и знает, что нужно для эффективных тренировок. В нашем магазине представлены лучшие спортивные товары и экипировка, которые подходят как для новичков, так и для профессионалов. Мы предлагаем качественные решения для активной жизни и поддерживаем каждого на пути к здоровью и успеху.",
+            "about_image": "https://i.postimg.cc/7YMM8Vxk/temp-Imagegph-Eio.avif",
+            "button_more": "Подробнее",
+            "main_banner": [
+                {
+                    "banner": "https://i.postimg.cc/g0Fr49Zq/temp-Image-JLk8n7.avif",
+                    "description": "Мы — команда, которая любит спорт и знает, что нужно для эффективных тренировок. В нашем магазине представлены лучшие спорт",
+                    "button": "Связаться с нами"
+                }
+            ]
+        }
+    ],
+    "slider": [
+        {
+            "id": 1,
+            "slide": "https://i.postimg.cc/9F1v3B4q/temp-Imageudg-Ap4.avif"
+        },
+        {
+            "id": 2,
+            "slide": "https://i.postimg.cc/xTWL1wbr/temp-Image-L0z-UDj.avif"
+        },
+        {
+            "id": 3,
+            "slide": "https://i.postimg.cc/Yqc1rcW5/temp-Image-B9qb-Ns.avif"
+        },
+        {
+            "id": 4,
+            "slide": "https://i.postimg.cc/6qC423vD/temp-Imageg-Orf-QV.avif"
         }
     ]
 
