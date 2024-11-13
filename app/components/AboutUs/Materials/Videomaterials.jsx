@@ -1,48 +1,61 @@
 'use client'
 import Image from 'next/image'
-import React, {useEffect, useState} from 'react'
+import React, { useEffect, useState } from 'react'
 import imgVideotwo from '../../../assets/images/image.png'
 import imgVideo from '../../../assets/images/image69.png'
 import dynamicFetch from "@/hooks/fetch";
-import {ModalVideos} from "@/app/components/modalWindows/ModalVideos";
+import { ModalVideos } from "@/app/components/modalWindows/ModalVideos";
 
 const fetchKey = '/videos';
 
 export function Videomaterials() {
     const [videos, setVideos] = useState([]);
-    const [video, setVideo] = useState(false);
+    const [showVideo, setShowVideo] = useState(false);
+    const [videoSrc, setVideoSrc] = useState(null);
+
     useEffect(() => {
         dynamicFetch(fetchKey).then(data => setVideos(data));
     }, []);
 
-    const videoOpen = (video) => {
-        return (
-            <ModalVideos param={video} setShowModal={setVideo}/>
-        )
+    const videoOpen = (videoSrc) => {
+        setVideoSrc(videoSrc);
+        setShowVideo(true);
+    };
+
+    if (videos.length === 0) {
+        return null;
     }
+    const title = "Видео материалы";
 
-  return (
-    <section  className=''>
-        {
-            videos.map((video, index) => (
-                <section key={index} className='container'>
-                    <h2 className=' text-4xl impact  mt-10 p-5'>{video.title}</h2>
-                    <section className='video-content grid grid-cols-1 xl:grid-cols-2 p-5'>
+    return (
+        <section className=''>
+            <section className='container'>
+                <h2 className='text-4xl impact mt-10 p-5'>{title}</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-5 pt-0 h-[527px]">
+                    {videos.map((video, index) => (
+                        <div
+                            key={video.id}
+                            onClick={() => videoOpen(video.video)}
+                            className={`relative rounded-lg overflow-hidden ${index === 0 ? 'md:col-span-1 md:row-span-2' : ''}`}
+                        >
+                            <Image
+                                width={500}
+                                height={500}
+                                src={video.image}
+                                alt={`Video ${video.title}`}
+                                className="w-full h-full object-cover"
+                            />
+                            <button className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 text-white text-4xl">
+                                &#9654;
+                            </button>
+                        </div>
+                    ))}
+                </div>
+            </section>
 
-                        {
-                            video.video_materials?.map((video) => (
-                                <div onClick={() => setVideo(true)} key={video.id} className="w-full">
-                                    <Image src={imgVideotwo} alt='video'
-                                           className='xl:w-1/2 w-full object-cover object-top h-[200px] xl:h-full p-1 rounded-2xl '/>
-                                </div>
-                            ))
-
-                        }
-                    </section>
-                </section>
-            ))
-        }
-
-    </section>
-  )
+            {showVideo && (
+                <ModalVideos videoSrc={videoSrc} showVideo={showVideo} setShowVideo={setShowVideo} />
+            )}
+        </section>
+    );
 }

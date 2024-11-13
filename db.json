@@ -10,7 +10,7 @@
             "main_image": "https://i.postimg.cc/NfyxkByW/temp-Image-XNY1z-Z.avif",
             "available_colors": ["#ff0000", "#00ff00", "#0000ff"],
             "available_sizes": ["S", "M", "L"],
-            "images": ["https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg", "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg", "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg", "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg","https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg","https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"]
+            "images": ["https://i.postimg.cc/NfyxkByW/temp-Image-XNY1z-Z.avif", "https://i.postimg.cc/CxgdvJJM/1-401.png", "https://i.postimg.cc/sfbMW3hh/2-1.png", "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg","https://i.postimg.cc/mr6LGS3H/image-52-3.png"]
         },
         {
             "id": 2,
@@ -138,11 +138,7 @@
         }
     ],
     "popularCategories": [
-        {
-            "title" : "Популярные категории"
-        },
-        {
-            "products" : [
+
                 {
                     "id": 1,
                     "image": "https://i.postimg.cc/52MMqJ5n/temp-Image-GJ6-Hl-J.avif",
@@ -168,8 +164,7 @@
                     "image": "https://i.postimg.cc/tRYDqmZ5/temp-Image742-F6-L.avif",
                     "description": "Детская одежда"
                 }
-            ]
-        }
+
     ],
     "main_banner": [
         {
@@ -191,11 +186,7 @@
         }
     ],
     "advantages": [
-        {
-            "title" : "advantages"
-        },
-        {
-            "advantages": [
+
                 {
                     "id": 1,
                     "number": 1,
@@ -214,52 +205,51 @@
                     "title": "Быстрая доставка",
                     "description": "Мы — команда, которая любит спорт и знает, что нужно для эффективных тренировок. В нашем магазине представлены лучшие спорт"
                 }
-            ]
-        }
+
     ],
     "whole_sale": [
-            {
-                "id": 1,
-                "image": "https://i.postimg.cc/NfyxkByW/temp-Image-XNY1z-Z.avif",
-                "title": "Спортивные шорты ",
-                "whole_price": 1000,
-                "price": 1400
-            },
-            {
-                "id": 2,
-                "image": "https://i.postimg.cc/xjZvChsg/temp-Image-BYKGU7.avif",
-                "title": "Спортивные шорты ",
-                "whole_price": 1000,
-                "price": 1400
-            },
-            {
-                "id": 3,
-                "image": "https://i.postimg.cc/9QdZLMcN/temp-Imagevmj-Ei-C.avif",
-                "title": "Спортивные шорты ",
-                "whole_price": 1000,
-                "price": 1400
-            },
-            {
-                "id": 4,
-                "image": "https://i.postimg.cc/XJJ5NkdT/lite-racer-adapt-7-0-wide-shoes-jpg.avif",
-                "title": "Спортивные шорты ",
-                "whole_price": 1000,
-                "price": 1400
-            },
-            {
-                "id": 5,
-                "image": "https://i.postimg.cc/FFYPDj8W/temp-Image-DQRr-CF.avif",
-                "title": "Спортивные шорты ",
-                "whole_price": 1000,
-                "price": 1400
-            },
-            {
-                "id": 6,
-                "image": "https://i.postimg.cc/GhYX1bcv/temp-Imageo-Un-TBn.avif",
-                "title": "Спортивные шорты ",
-                "whole_price": 1000,
-                "price": 1400
-            }
+        {
+            "id": 1,
+            "image": "https://i.postimg.cc/NfyxkByW/temp-Image-XNY1z-Z.avif",
+            "title": "Спортивные шорты ",
+            "whole_price": 1000,
+            "price": 1400
+        },
+        {
+            "id": 2,
+            "image": "https://i.postimg.cc/xjZvChsg/temp-Image-BYKGU7.avif",
+            "title": "Спортивные шорты ",
+            "whole_price": 1000,
+            "price": 1400
+        },
+        {
+            "id": 3,
+            "image": "https://i.postimg.cc/9QdZLMcN/temp-Imagevmj-Ei-C.avif",
+            "title": "Спортивные шорты ",
+            "whole_price": 1000,
+            "price": 1400
+        },
+        {
+            "id": 4,
+            "image": "https://i.postimg.cc/XJJ5NkdT/lite-racer-adapt-7-0-wide-shoes-jpg.avif",
+            "title": "Спортивные шорты ",
+            "whole_price": 1000,
+            "price": 1400
+        },
+        {
+            "id": 5,
+            "image": "https://i.postimg.cc/FFYPDj8W/temp-Image-DQRr-CF.avif",
+            "title": "Спортивные шорты ",
+            "whole_price": 1000,
+            "price": 1400
+        },
+        {
+            "id": 6,
+            "image": "https://i.postimg.cc/GhYX1bcv/temp-Imageo-Un-TBn.avif",
+            "title": "Спортивные шорты ",
+            "whole_price": 1000,
+            "price": 1400
+        }
     ],
     "filterParams": [
         {
@@ -412,28 +402,25 @@
         }
     ],
     "videos": [
-        {
-            "title": "Видео материялы"
-        },
-        {
-            "video_materials": [
                 {
                     "id": 1,
                     "video": "https://player.vimeo.com/video/1027050821?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-                    "title": "Спортивные шорты "
+                    "title": "Спортивные шорты ",
+                    "image": "https://i.postimg.cc/qM8BWZfX/temp-Image24ktzw.avif"
                 },
                 {
                     "id": 2,
                     "video": "https://player.vimeo.com/video/1027052510?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-                    "title": "Спортивные шорты "
+                    "title": "Спортивные шорты ",
+                    "image": "https://i.postimg.cc/qM8BWZfX/temp-Image24ktzw.avif"
                 },
                 {
                     "id": 3,
                     "video": "https://player.vimeo.com/video/1027053279?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-                    "title": "Спортивные шорты "
+                    "title": "Спортивные шорты ",
+                    "image": "https://i.postimg.cc/qM8BWZfX/temp-Image24ktzw.avif"
                 }
-            ]
-        }
+
     ],
     "reviews": [
         {
@@ -478,7 +465,7 @@
             "description": "Мы — команда, которая любит спорт и знает, что нужно для эффективных тренировок. В нашем магазине представлены лучшие спортивные товары и экипировка, которые подходят как для новичков, так и для профессионалов. Мы предлагаем качественные решения для активной жизни и поддерживаем каждого на пути к здоровью и успеху.",
             "image":"https://i.postimg.cc/4yXKx3J0/temp-Image-Kn-CIu-E.avif"
         }
-        ],
+    ],
     "ourTeam": [
         {
             "id": 1,
@@ -607,6 +594,57 @@
         {
             "id": 4,
             "slide": "https://i.postimg.cc/6qC423vD/temp-Imageg-Orf-QV.avif"
+        }
+    ],
+    "about": [
+        {
+            "id": 1,
+            "banner": "https://i.postimg.cc/vZnTC3s7/temp-Imageu4-U9-J1.avif",
+            "title": "Мы — команда, которая любит спорт и знает, что нужно для эффекти",
+            "description": "Мы — команда, которая любит спорт и знаетz, что нужно для эффекти"
+        }
+    ],
+    "banner_with_description": [
+        {
+            "id": 1,
+            "banner": "https://i.postimg.cc/7ZPGJg8S/temp-Image-Wyin-WB.avif",
+            "description": "Мы — команда, которая любит спорт и знает, что нужно для эффективных тренировок. В нашем магазине представлены лучшие спорт"
+        }
+    ],
+    "footer": [
+        {
+            "id": 1,
+            "socials": [
+                {
+                    "id": 1,
+                    "icon": "",
+                    "name": "",
+                    "src": ""
+                },
+                {
+                    "id": 2,
+                    "icon": "",
+                    "name": "",
+                    "src": ""
+                },
+                {
+                    "id": 3,
+                    "icon": "",
+                    "name": "",
+                    "src": ""
+                }
+            ],
+            "phone_numbers": [
+                {
+                    "id": 1,
+                    "phone": "+996223306327"
+                },
+                {
+                    "id": 2,
+                    "phone": "+996222416854"
+                }
+            ]
+
         }
     ]
 

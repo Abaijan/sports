@@ -3,11 +3,16 @@ import Link from "next/link";
 import Image from "next/image";
 import basketWhite from "@/app/assets/icons/basketIconWhite.svg";
 import basketBlack from "@/app/assets/icons/basketIconsBlack.svg";
+import {useEffect} from "react";
+import {usePathname} from "next/navigation";
 
-export function HeaderBurger({path ,setCloseBurger, isOpen}) {
+export function HeaderBurger({setCloseBurger, isOpen}) {
+    const path =   usePathname();
     function handleClose() {
         setCloseBurger(!isOpen)
     }
+
+
 
     return (
        <section  className={`${path === '/main' ? 'blue' : 'white'} container z-[10000] fixed overflow-y-scroll w-full h-full  top-0 left-0 flex items-center justify-center`}>

@@ -5,14 +5,15 @@ import Link from "next/link";
 import BasketCard from "@/app/components/Card/BaketCard";
 import {ModalWind} from "@/app/components/modalWindows/ModalWindow";
 import dynamicFetch from "@/hooks/fetch";
+import {useStore} from "zustand";
 
-export const Basket = () => {
+export const Basket = api => {
     const [showModal, setShowModal] = useState(false);
     const[info, setInfo] = useState([]);
     const basket = basketStore(state => state.basket);
     const removeFromBasket = basketStore(state => state.removeFromBasket);
     const updateItemCount = basketStore(state => state.updateItemCount);
-    // Функция для удаления из корзины
+
 
     useEffect(() => {
         dynamicFetch('/basketPage').then(data => setInfo(data));
@@ -22,9 +23,11 @@ export const Basket = () => {
     const totalItems = basket.reduce((total, item) => total + item.count, 0);
     const totalPrice = basket.reduce((total, item) => total + (item.price * item.count), 0);
 
+
     function clickHandler() {
         setShowModal(!showModal);
     }
+
     return (
         <section>
             {
@@ -39,7 +42,7 @@ export const Basket = () => {
                         <section className='flex flex-col xl:flex-row  xl:justify-between'>
                             <section className='xl:w-[762px] flex flex-col gap-[38px] py-[50px] xl:py-[100px] px-3 xl:pt-5 xl:pb-[300px]'>
                                 { basket.length > 0 ? basket.map((item, index) => (
-                                    <BasketCard key={index} item={item} removeFromBasket={removeFromBasket}
+                                    <BasketCard key={index} item={item && item} removeFromBasket={removeFromBasket}
                                                 updateItemCount={updateItemCount}/>
                                 )) : (<h1 className='text-3xl font-bold'>{item.empty}</h1>) }
                             </section>
@@ -54,7 +57,7 @@ export const Basket = () => {
                                         <span> {totalItems} товара(ов)</span>
                                     </section>
                                     <section>
-                                        <h2 className='text-3xl mt-7'>{item.total}: {totalPrice} сом</h2>
+                                        <h2 className='text-3xl mt-7'>{item.total} {totalPrice} сом</h2>
                                     </section>
                                     <section className='mt-10'>
                                         <button
