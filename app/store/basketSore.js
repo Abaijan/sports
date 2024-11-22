@@ -12,7 +12,7 @@ export const productsStore = create(
             getProducts: async () => {
                 try {
                     const response = await dynamicFetch('/products');
-                    set({ products: response });
+                    set({ products: response.results, error: null });
                 } catch (error) {
                     set({ error: 'Failed to fetch products' });
                     console.error(error);

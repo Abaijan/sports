@@ -6,6 +6,8 @@ import {useState, useEffect} from "react";
 import {useParams} from "next/navigation";
 import {productsStore} from "@/app/store/basketSore";
 import {basketStore} from "@/app/store/basketSore";
+import {getLocalizedText} from "@/hooks/locale";
+import {localeStore} from "@/app/store/localeStore";
 
 export default function Product() {
     const param = useParams();
@@ -17,6 +19,9 @@ export default function Product() {
     const [selectedProduct, setSelectedProduct] = useState({
         id: response?.id,
         title: response?.title,
+        title_en: response?.title_en,
+        title_ru: response?.title_ru,
+        title_kg: response?.title_kg,
         description: response?.description,
         price: response?.price,
         image: response?.main_image,
@@ -29,7 +34,10 @@ export default function Product() {
         productsStore.getState().getProducts();
         setSelectedProduct({
             id: response?.id,
-            title: response?.title,
+            title: response?.title_en,
+            title_en: response?.title_en,
+            title_ru: response?.title_ru,
+            title_kg: response?.title_kg,
             description: response?.description,
             price: response?.price,
             image: selectedImage,
@@ -52,21 +60,20 @@ export default function Product() {
             addToBasket(selectedProduct);
         }
     };
-
+    const locale = localeStore((set) => set.locale);
     const [selectedImage, setSelectedImage] = useState(response?.main_image); // Fallback to placeholder
 
     const selectImage = (source) => () => {
         setSelectedImage(source);
     };
-
-    if (!response) return null;
+    if (!response) return <p>Loading...</p>;
 
     return (
         <section className="container px-[15px] xl:px-0">
             <section className="flex flex-col gap-6">
                 <div className="my-[50px]">
                     <div className="text-[18px] flex font-thin text-[#00000099]">
-                        <Link href='/catalog'>Каталог</Link><p> /{response?.title}</p>
+                        <Link href='/catalog'>{locale === 'en' ? 'Catalog' :  'Каталог'}</Link><p> /{getLocalizedText(response, 'title', locale)}</p>
                     </div>
                 </div>
                 <div className="flex flex-col xl:flex-row mb-[60px] gap-6">
@@ -82,11 +89,11 @@ export default function Product() {
                     </div>
 
                     <div className="flex flex-col gap-[30px] w-full xl:w-1/2">
-                        <h1 className="manrope font-bold text-[24px] leading-[30px]">{response?.title}</h1>
-                        <p className="font-normal text-[16px] leading-[21px] text-[#222222CC]">{response?.description}</p>
+                        <h1 className="manrope font-bold text-[24px] leading-[30px]">{getLocalizedText(response, 'title', locale)}</h1>
+                        <p className="font-normal text-[16px] leading-[21px] text-[#222222CC]">{getLocalizedText(response, 'description', locale)}</p>
                         <span className="font-bold text-[22px] leading-[30px] text-[#1243C0]">{response?.price} сом</span>
                         <div className="flex flex-col gap-4">
-                            <p className="font-thin text-[16px] leading-[21px]">Цвет</p>
+                            <p className="font-thin text-[16px] leading-[21px]">{locale === 'en' ? 'Color' : locale === 'kgz' ? 'Түсү' : 'Цвет'}</p>
                             <div className="flex gap-4">
                                 {response?.available_colors.map((color, index) => (
                                     <div onClick={() => setSelectedProduct({...selectedProduct, color})} key={index} className={`rounded-full cursor-pointer w-[30px] h-[30px] ${color === selectedProduct.color ? 'border-[1px] box-content border-[#1243C0]' : ''}`} style={{backgroundColor: color}}></div>
@@ -95,7 +102,7 @@ export default function Product() {
                         </div>
                         <div className="flex xl:flex-row flex-col xl:w-auto w-full gap-4">
                             <div className="flex flex-col gap-4">
-                                <p className="font-thin text-[16px] leading-[21px]">Размеры</p>
+                                <p className="font-thin text-[16px] leading-[21px]">{locale === 'en' ? 'Size' : 'Размер'}</p>
                                 <div className="flex w-full justify-between xl:flex-row">
                                     <div className="flex w-full xl:w-[300px] gap-4">
                                         {response?.available_sizes?.map((size, index) => (

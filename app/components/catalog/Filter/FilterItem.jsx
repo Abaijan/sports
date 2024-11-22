@@ -1,23 +1,39 @@
-// FilterItem.js
-'use client';
+'use client'
 import { useState } from "react";
+import { getLocalizedText } from "@/hooks/locale";
+import {localeStore} from "@/app/store/localeStore";
 
-export const FilterItem = ({ filterParam }) => {
+export const FilterItem = ({ filterParam, setSelectedFilters }) => {
     const [showFilter, setShowFilter] = useState(true);
+    const locale = localeStore((set) => set.locale);
 
-    // const handleClick = (key) => {
-    //     onFilterChange(key); // Вызываем функцию для обновления фильтров в родительском компоненте
-    // };
+    const handleClick = (keyId) => {
+        setSelectedFilters((prev) => {
+            const currentFilter = prev[filterParam.id] || [];
+            const updatedFilter = currentFilter.includes(keyId)
+                ? currentFilter.filter((id) => id !== keyId) // Удаляем, если выбран
+                : [...currentFilter, keyId]; // Добавляем, если не выбран
+
+            return {
+                ...prev,
+                [filterParam.id]: updatedFilter,
+            };
+        });
+    };
 
     return (
         <section className="flex h-fit flex-col gap-y-[10px] p-[21px]">
             <div className="flex justify-between items-center">
-                <h2 className="montserrat font-medium text-[18px]">{filterParam.name}</h2>
-                {filterParam.keys && filterParam.keys.length > 5 && (
+                <h2 className="montserrat font-medium text-[18px]">
+                    {getLocalizedText(filterParam, "name", locale) || filterParam.name}
+                </h2>
+                {filterParam.results.results && filterParam.results.results.length > 5 && (
                     <div>
                         <svg
                             onClick={() => setShowFilter(!showFilter)}
-                            className={`cursor-pointer transition-transform duration-300 ${showFilter ? 'rotate-180' : ''}`}
+                            className={`cursor-pointer transition-transform duration-300 ${
+                                showFilter ? "rotate-180" : ""
+                            }`}
                             width="22"
                             height="22"
                             viewBox="0 0 22 22"
@@ -36,18 +52,26 @@ export const FilterItem = ({ filterParam }) => {
                     </div>
                 )}
             </div>
-            {(filterParam.keys.length > 5 ? filterParam.keys : filterParam.keys.slice(0, 5)).map((key, index) => (
+            {(filterParam.results.length > 5
+                    ? filterParam.results
+                    : filterParam.results.results
+            ).map((key, index) => (
                 <div
                     key={index}
-                    className={showFilter ? "h-auto opacity-100 transition-all duration-800 flex-col flex gap-[12px]" : "transition-transform duration-800 h-0 opacity-0"}
+                    className={`${
+                        showFilter
+                            ? "h-auto opacity-100 transition-all duration-800 flex-col flex gap-[12px]"
+                            : "transition-transform duration-800 h-0 opacity-0"
+                    }`}
                 >
                     <label className="flex items-center gap-2 text-lg font-medium text-gray-800">
                         <input
-                            name={key.name}
+                            name={getLocalizedText(key, "title", locale)}
                             type="checkbox"
+                            onClick={() => handleClick(key.id)}
                             className="cursor-pointer block w-5 h-5 rounded-sm peer-checked:bg-[#112A76]"
                         />
-                        <span>{key.name}</span>
+                        <span>{getLocalizedText(key, "title", locale) || key.title}</span>
                     </label>
                 </div>
             ))}

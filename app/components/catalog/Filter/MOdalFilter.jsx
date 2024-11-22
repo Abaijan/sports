@@ -1,6 +1,6 @@
 import {Filter} from "@/app/components";
 
-export function MOdalFilter({showModal, handleShow, onSelectFilter}) {
+export function MOdalFilter({showModal, handleShow, onChangeFilter}) {
     function clickHandler() {
         handleShow(!showModal)
     }
@@ -16,7 +16,7 @@ export function MOdalFilter({showModal, handleShow, onSelectFilter}) {
                         <path d="M16 7H3.83L9.42 1.41L8 0L0 8L8 16L9.41 14.59L3.83 9H16V7Z" fill="black"/>
                     </svg>
                 </button>
-                <Filter onChangeFilter={onSelectFilter}/>
+                <Filter onChangeFilter={onChangeFilter}/>
             </section>
         </section>
     );
