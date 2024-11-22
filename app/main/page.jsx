@@ -1,4 +1,3 @@
-
 import {
     BannerHome,
     HomeAbout,
@@ -8,17 +7,16 @@ import {
     PopularCategory,
     ImageBanner, SalesCards, Advantages
 } from "@/app/components";
-import {Videomaterials} from "@/app/components/AboutUs/Materials/Videomaterials";
+import {VideoMaterials} from "@/app/components/AboutUs/Materials/Videomaterials";
 
 
 export default function Main(){
 
 
-
     return (
         <section id="main">
             <BannerHome/>
-            <New/>
+            < New/>
             <HomeAbout/>
             <PopularCategory/>
             <ImageBanner/>
@@ -26,7 +24,7 @@ export default function Main(){
             <Advantages/>
             <BannerWithDescription/>
             <Review/>
-            <Videomaterials/>
+            <VideoMaterials/>
         </section>
     );
 }

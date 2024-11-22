@@ -1,4 +1,6 @@
 import { Header, Footer } from "./components";
+import dynamic from "next/dynamic";
+
 import "./globals.css";
 
 
@@ -9,11 +11,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="ru">
+    <html lang='ru'>
       <body >
         <Header />
              {children}
-        <Footer />
+        {/*<Footer />*/}
       </body>
     </html>
   );

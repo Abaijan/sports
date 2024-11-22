@@ -1,54 +1,42 @@
-'use client'
+'use client';
 import { useEffect, useState } from "react";
-import { Filter, ProductList } from '@/app/components';
+import { Filter, ProductList } from "@/app/components";
 import dynamicFetch from "@/hooks/fetch";
 import { MOdalFilter } from "@/app/components/catalog/Filter/MOdalFilter";
+import {localeStore} from "@/app/store/localeStore";
 
 export default function Catalog() {
-    const [products, setProducts] = useState([]);
-    const [filteredProducts, setFilteredProducts] = useState([]);
-    const [filters, setFilters] = useState({});
-    const [showFilter, setShowFilter] = useState(false);
-
-    const onSelectFilter = (newFilters) => {
-        setFilters(newFilters);
-    };
-
+    const [products, setProducts] = useState([]); // Все продукты
+    const [filteredProducts, setFilteredProducts] = useState([]); // Отфильтрованные продукты
+    const [filters, setFilters] = useState({}); // Выбранные фильтры
+    const [showFilter, setShowFilter] = useState(false); // Состояние мобильного фильтра
+    const locale = localeStore(set => set.locale);
+    // Запрос данных о продуктах
     useEffect(() => {
         const fetchProducts = async () => {
-            const data = await dynamicFetch('/products');
-            setProducts(data);
-            setFilteredProducts(data);
+            const data = await dynamicFetch("/products");
+            setProducts(data.results);
+            setFilteredProducts(data.results);
         };
         fetchProducts();
     }, []);
 
-    // Function to toggle the filter modal
-    function toggleFilter() {
-        setShowFilter(!showFilter);
-    }
-
-    // Set the initial showFilter state based on window width and listen for resize events
+    // Применение фильтров
     useEffect(() => {
-        const handleResize = () => {
-            if (window.innerWidth > 630) {
-                setShowFilter(false); // Hide modal filter if the screen width is above 630px
-            }
+        const  applyFilters = async () => {
+            await dynamicFetch(`/products?${Object.entries(filters).map(([key, value]) => `${key}=${value}`).join("&")}`).then(data => setFilteredProducts(data.results.filter((item, index, self) =>
+                index === self.findIndex((t) => t.id === item.id)
+            )));
         };
+        applyFilters();
 
-        // Set initial filter visibility based on window width
-        handleResize();
-        window.addEventListener("resize", handleResize);
+    }, [filters]);
 
-        // Clean up the event listener on component unmount
-        return () => window.removeEventListener("resize", handleResize);
-    }, []);
+    // Обновление размера окна
 
-    if (!products) return (
-        <section className="container px-auto">
-            <h1>Loading...</h1>
-        </section>
-    );
+
+
+    const toggleFilter = () => setShowFilter(!showFilter);
 
     return (
         <section>
@@ -59,25 +47,30 @@ export default function Catalog() {
                             onClick={toggleFilter}
                             className="lg:hidden block montserrat font-medium h-[40px] w-[158px] bg-[#1243C0] rounded-2xl text-white text-[18px]"
                         >
-                            Фильтрации
+                            {locale === 'en' ? 'Filters' : locale === 'ru' ? 'Фильтры' : 'Фильтрлер'}
                         </button>
-                        <h2 className="font-medium hidden lg:block text-[18px] ml-[40px]">Фильтрации</h2>
+                        <h2 className="font-medium hidden lg:block text-[18px] ml-[40px]">
+                            {locale === 'en' ? 'Filters' : locale === 'ru' ? 'Фильтры' : 'Фильтрлер'}
+                        </h2>
                     </div>
                     <div className="flex gap-[30px]">
+                        {/* Боковой фильтр для десктопа */}
                         <div className="hidden lg:block">
-                            <Filter
-                                filters={filters}
-                                onSelectFilter={onSelectFilter}
-                            />
+                            <Filter onChangeFilter={setFilters} />
                         </div>
+
+                        {/* Мобильный фильтр */}
                         {showFilter && (
                             <MOdalFilter
                                 handleShow={setShowFilter}
                                 showModal={showFilter}
-                                onSelectFilter={onSelectFilter}
+                                onChangeFilter={setFilters}
+                                className="sm:block lg:hidden"
                             />
                         )}
-                        <ProductList filteredItems={products} appliedFilters={filters} />
+
+                        {/* Список продуктов */}
+                        <ProductList filteredItems={ filteredProducts || []} />
                     </div>
                 </div>
             </section>
