@@ -1,6 +1,6 @@
 'use client'
 import React, {useEffect, useState} from 'react'
-import dynamicFetch from "@/hooks/fetch";
+import dynamicFetch, {dynamicFetch2} from "@/hooks/fetch";
 import {getLocalizedText} from "@/hooks/locale";
 import {localeStore} from "@/app/store/localeStore";
 
@@ -39,15 +39,15 @@ export  default function Contacts() {
         };
 
 
-        // dynamicFetch2('/send-to-email', data)
-        //     .then(response => response.json())
-        //     .then(data => {
-        //         console.log('Success:', data);
-        //         setStatus(true);
-        //     })
-        //     .catch((error) => {
-        //         console.error('Error:', error);
-        //     });
+        dynamicFetch2('/send-to-email', data)
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+                setStatus(true);
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
     };
 
     useEffect(() => {

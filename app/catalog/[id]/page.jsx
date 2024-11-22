@@ -8,13 +8,19 @@ import {productsStore} from "@/app/store/basketSore";
 import {basketStore} from "@/app/store/basketSore";
 import {getLocalizedText} from "@/hooks/locale";
 import {localeStore} from "@/app/store/localeStore";
+import dynamic from "next/dynamic";
+
+
+
 
 export default function Product() {
     const param = useParams();
 
-    const addToBasket = basketStore((state) => state.addToBasket);
 
+    const addToBasket = basketStore((state) => state.addToBasket);
     const  { products } = productsStore();
+
+
     const response = products.find(product => Number(product.id) === Number(param.id));
     const [selectedProduct, setSelectedProduct] = useState({
         id: response?.id,

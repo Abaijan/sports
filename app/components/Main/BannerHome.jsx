@@ -59,7 +59,7 @@ const locale = localeStore((set) => set.locale);
                     </section>
                 </section>
                 {/* Правая часть со слайдами */}
-                <section className="relative  top-[-30vh]  xl:min-h-[1020px] xl:min-w-[1000px] min-w-[1660px] right-[-120%] min-h-[1660px] xl:w-[1060px] xl:top-[20vh] xl:right-[-10vw]  xl:h-[1020px] rounded-full bg-white">
+                <section className="relative  top-[-20vw]  xl:min-h-[1020px] xl:min-w-[1000px] min-w-[960px] right-[-50%] min-h-[960px] xl:w-[1060px] xl:top-[20vh] xl:right-[-10vw]  xl:h-[1020px] rounded-full bg-white">
                     {item.images?.map((image, imgIndex) => (
                         <Image
                             key={imgIndex}
@@ -68,7 +68,7 @@ const locale = localeStore((set) => set.locale);
                             height={1500}
                             loading={"eager"}
                             alt={`Slide ${imgIndex + 1}`}
-                            className={`absolute inset-0 w-[500px] lg:w-[80%] lg:h-auto left-[100px] h-[500px] transition-opacity xl:mt-0 mt-[150px] duration-1000 ease-in-out ${
+                            className={`absolute inset-0 w-[500px] lg:w-[80%] lg:h-auto left-[00px] h-[500px] transition-opacity xl:mt-0 mt-[100px] duration-1000 ease-in-out ${
                                 imgIndex === sliderIndex ? 'opacity-100' : 'opacity-0'
                             }`}
                         />
