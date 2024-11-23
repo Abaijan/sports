@@ -9,7 +9,7 @@ import {localeStore} from "@/app/store/localeStore";
 
 export function HeaderBurger({selectLocale, setCloseBurger, isOpen }) {
     const path = usePathname();
-    const bgColor = path === '/main' ? 'blue' : 'white';
+    const [bgColor, setBgColor] = useState()
     const basketIcon = path === '/main' ? basketWhite : basketBlack;
 
     const [isAnimating, setIsAnimating] = useState(false);
@@ -18,7 +18,18 @@ export function HeaderBurger({selectLocale, setCloseBurger, isOpen }) {
         if (isOpen) {
             setIsAnimating(true);
         }
+
     }, [isOpen]);
+
+
+    useEffect(() => {
+        if (path === '/main' ) {
+            setBgColor('blue')
+        } else {
+            setBgColor('white')
+        }
+    }, [path])
+
 
     function handleClose() {
         setIsAnimating(false);

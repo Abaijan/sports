@@ -11,7 +11,7 @@ export default function About() {
         <section>
              <Aboutlogo/>
              <Explanation/>
-             <We/>
+             {/*<We/>*/}
              <OurTeam/>
              <BannerWithDescription/>
             <Advantages/>
