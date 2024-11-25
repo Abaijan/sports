@@ -66,7 +66,7 @@ const locale = localeStore((set) => set.locale);
                         <section className='flex flex-col xl:flex-row  xl:justify-between'>
                             <section className='xl:w-[762px] flex flex-col gap-[38px] py-[50px] xl:py-[100px] px-3 xl:pt-5 xl:pb-[300px]'>
                                 { basket.length > 0 ? basket.map((item, index) => (
-                                    <BasketCard key={index} item={item && item} removeFromBasket={removeFromBasket}
+                                    <BasketCard key={index} item={item.image && item} removeFromBasket={removeFromBasket}
                                                 updateItemCount={updateItemCount}/>
                                 )) : (<h1 className='text-3xl font-bold'>{item.empty}</h1>) }
                             </section>
