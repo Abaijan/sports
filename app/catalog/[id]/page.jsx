@@ -12,10 +12,9 @@ import dynamic from "next/dynamic";
 
 
 
-
 export default function Product() {
-    const param = useParams();
 
+    const param = useParams();
 
     const addToBasket = basketStore((state) => state.addToBasket);
     const  { products } = productsStore();
@@ -35,6 +34,7 @@ export default function Product() {
         size: null,
         count: 1
     });
+
 
     useEffect(() => {
         productsStore.getState().getProducts();
@@ -76,6 +76,7 @@ export default function Product() {
 
     return (
         <section className="container px-[15px] xl:px-0">
+            <title>{getLocalizedText(response, 'title', locale)}</title>
             <section className="flex flex-col gap-6">
                 <div className="my-[50px]">
                     <div className="text-[18px] flex font-thin text-[#00000099]">

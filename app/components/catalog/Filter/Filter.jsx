@@ -34,7 +34,7 @@ export const Filter = ({ onChangeFilter }) => {
     }, [selectedFilters]);
 
     return (
-        <article className="rounded-2xl bg-white z-[10] flex flex-col w-[316px] h-fit">
+        <article className="rounded-2xl border-[1px] border-gray-300 bg-white z-[10] flex flex-col w-[316px] h-fit">
             {filters.map((filter) => (
                 <FilterItem
                     key={filter.id}
