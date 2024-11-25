@@ -2,11 +2,12 @@
 import dynamicFetch from "@/hooks/fetch";
 import {useEffect, useState} from "react";
 import {localeStore} from "@/app/store/localeStore";
+import Link from "next/link";
 
 const SalesButtons = {
-    en: 'Buy wholesale',
-    ru: 'Оформить оптовую заявку',
-    kgz: 'Дүң сатып алу',
+    en: 'Apply for a request',
+    ru: 'Оформить  заявку',
+    kgz: 'Заявка калтыруу',
 };
 
 export const SalesCards =  () => {
@@ -45,9 +46,12 @@ export const SalesCards =  () => {
                     <p className="manrope text-[18px] xl:text-[20px] text-white font-thin">
                         {getLocalizedText(block, 'description')}
                     </p>
-                    <button className="w-[288px] px-[33px] py-[10px] rounded-[10px] mt-[20px] bg-white text-black">
-                        {SalesButtons[locale]}
-                    </button>
+                    <Link href={`${block.id === 1 ? '/catalog' : '/wholesale'}`}>
+                        <button className="w-[288px] px-[33px] py-[10px] rounded-[10px] mt-[20px] bg-white text-black">
+                            {SalesButtons[locale]}
+                        </button>
+                    </Link>
+
                 </section>
             ))}
         </section>

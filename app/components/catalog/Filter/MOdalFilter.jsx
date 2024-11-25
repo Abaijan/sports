@@ -1,6 +1,6 @@
 import {Filter} from "@/app/components";
 
-export function MOdalFilter({showModal, handleShow, onChangeFilter}) {
+export function MOdalFilter({showModal, handleShow, filters, onChangeFilter}) {
     function clickHandler() {
         handleShow(!showModal)
     }

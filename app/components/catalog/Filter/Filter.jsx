@@ -2,11 +2,12 @@
 import { useEffect, useState } from "react";
 import { FilterItem } from "@/app/components";
 import dynamicFetch from "@/hooks/fetch";
+import {filterStore} from "@/app/store/filterStore";
 
 export const Filter = ({ onChangeFilter }) => {
-    const [filters, setFilters] = useState([]);
+    const [filters, setFilters] = useState( []);
     const [selectedFilters, setSelectedFilters] = useState({});
-
+    const setFilter = filterStore(set => set.setFilter);
     useEffect(() => {
         const fetchFilters = async () => {
             const categories = await dynamicFetch("/categories");
@@ -27,6 +28,7 @@ export const Filter = ({ onChangeFilter }) => {
     // Передача выбранных фильтров вверх
     useEffect(() => {
         onChangeFilter(selectedFilters);
+        setFilter(selectedFilters);
         console.log(selectedFilters)
 
     }, [selectedFilters]);

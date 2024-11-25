@@ -4,6 +4,7 @@ import React, {useEffect, useState} from 'react'
 import dynamicFetch from "@/hooks/fetch";
 import {getLocalizedText} from "@/hooks/locale";
 import {localeStore} from "@/app/store/localeStore";
+import Link from "next/link";
 
 export const  HomeWholesale = () =>  {
     const [wholesale, setWholesale] = useState([]);
@@ -25,10 +26,13 @@ export const  HomeWholesale = () =>  {
                               <p className="text-gray-700 drop-shadow-[1px_4px_5px_#FFFFFF] text-[18px]  font-medium mb-6">
                                   {getLocalizedText(wholesale, 'description', locale)}
                               </p>
+                              <Link href='#formBlock'>
                               <button
                                   className="xl:px-6 py-2 bg-green-500 text-white montserrat text-[16px] w-[202px] rounded-md hover:bg-green-600 focus:outline-none">
                                   {locale === 'ru' ? 'Оформить заявку' : locale === 'kgz' ? 'Өтүнмө тапшыру' : 'Apply'}
                               </button>
+
+                              </Link>
                           </section>
                           <Image width={2000} height={2000} src={wholesale.image} alt="Wholesale"
                                  className="xl:w-1/2  xl:object-top xl:h-[110vh] xl:translate-y-[50px] xl:top-0  xl:z-10 object-cover  xl:relative absolute z-[10] right-0 top-0 w-full h-full"/>

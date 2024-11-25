@@ -4,6 +4,7 @@ import { Filter, ProductList } from "@/app/components";
 import dynamicFetch from "@/hooks/fetch";
 import { MOdalFilter } from "@/app/components/catalog/Filter/MOdalFilter";
 import {localeStore} from "@/app/store/localeStore";
+import {useRouter} from "next/navigation";
 
 export default function Catalog() {
     const [products, setProducts] = useState([]); // Все продукты
@@ -11,6 +12,7 @@ export default function Catalog() {
     const [filters, setFilters] = useState({}); // Выбранные фильтры
     const [showFilter, setShowFilter] = useState(false); // Состояние мобильного фильтра
     const locale = localeStore(set => set.locale);
+    const router = useRouter();
     // Запрос данных о продуктах
     useEffect(() => {
         const fetchProducts = async () => {
@@ -27,6 +29,7 @@ export default function Catalog() {
             await dynamicFetch(`/products?${Object.entries(filters).map(([key, value]) => `${key}=${value}`).join("&")}`).then(data => setFilteredProducts(data.results.filter((item, index, self) =>
                 index === self.findIndex((t) => t.id === item.id)
             )));
+            router.push(`/catalog?${Object.entries(filters).map(([key, value]) => `${key}=${value}`).join("&")}`)
         };
         applyFilters();
 
