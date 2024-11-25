@@ -2,6 +2,7 @@
 import dynamicFetch from "@/hooks/fetch";
 import { useEffect, useState } from "react";
 import {localeStore} from "@/app/store/localeStore";
+import Link from "next/link";
 
 export  function BannerWithDescription() {
     const locale = localeStore((set) => set.locale); // Задаем локаль (можно подключить контекст или передать как пропс)
@@ -43,9 +44,12 @@ export  function BannerWithDescription() {
                         <h2 className="font-thin text-[18px] xl:text-[24px] manrope xl:font-medium mb-4">
                             {getLocalizedText(banner, 'description')}
                         </h2>
-                        <button className="bg-blue-600 text-white font-medium py-2 px-6 rounded-[10px] hover:bg-blue-700 transition duration-300">
-                            {locale === 'en' ? 'Contact Us' : locale === 'ru' ? 'Связаться с нами' : 'Биз менен байланышуу'}
-                        </button>
+                        <Link href='/contacts'>
+                            <button className="bg-blue-600 text-white font-medium py-2 px-6 rounded-[10px] hover:bg-blue-700 transition duration-300">
+                                {locale === 'en' ? 'Contact Us' : locale === 'ru' ? 'Связаться с нами' : 'Биз менен байланышуу'}
+                            </button>
+
+                        </Link>
                     </div>
                 </div>
             }

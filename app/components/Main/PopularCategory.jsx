@@ -5,6 +5,8 @@ import dynamicFetch from "@/hooks/fetch";
 import {getLocalizedText} from "@/hooks/locale";
 import {useEffect, useState} from "react";
 import {localeStore} from "@/app/store/localeStore";
+import {redirect} from "next/navigation";
+import Link from "next/link";
 
 export const PopularCategory =  () => {
     const [card, setCard] = useState({results: []});
@@ -28,9 +30,11 @@ export const PopularCategory =  () => {
                 <h2 className="xl:text-[36px] text-[24px] impact">
                     {locale === "en" ? "Popular Categories" : locale === "ru" ? "Популярные категории" : "Популярдуу категориялар"}
                 </h2>
-                <button className="rounded-xl border-[2px] border-gray-800 w-[98px] text-[24px] h-[39px] xl:h-[49px] flex items-center justify-center">
+                <Link href='/catalog'>
+                <button  className="rounded-xl border-[2px] border-gray-800 w-[98px] text-[24px] h-[39px] xl:h-[49px] flex items-center justify-center">
                     {locale === "en" ? "All" : locale === "ru" ? "Все" : "Баары"}
                 </button>
+                </Link>
             </section>
             <section className="xl:p-10 flex overflow-x-scroll xl:gap-[20px] space-x-6">
                 {card &&

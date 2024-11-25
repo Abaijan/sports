@@ -2,18 +2,18 @@
 import { useState } from "react";
 import { getLocalizedText } from "@/hooks/locale";
 import {localeStore} from "@/app/store/localeStore";
+import {filterStore} from "@/app/store/filterStore";
 
 export const FilterItem = ({ filterParam, setSelectedFilters }) => {
     const [showFilter, setShowFilter] = useState(true);
     const locale = localeStore((set) => set.locale);
-
+    const filter = filterStore((set) => set.filter);
     const handleClick = (keyId) => {
         setSelectedFilters((prev) => {
             const currentFilter = prev[filterParam.id] || [];
             const updatedFilter = currentFilter.includes(keyId)
                 ? currentFilter.filter((id) => id !== keyId) // Удаляем, если выбран
                 : [...currentFilter, keyId]; // Добавляем, если не выбран
-
             return {
                 ...prev,
                 [filterParam.id]: updatedFilter,

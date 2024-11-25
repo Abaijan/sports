@@ -3,6 +3,7 @@ import { Card} from "@/app/components";
 import dynamicFetch from "@/hooks/fetch";
 import {localeStore} from "@/app/store/localeStore";
 import {useEffect, useState} from "react";
+import {redirect} from "next/navigation";
 export const New = () => {
 
     const [carts, setCarts] = useState({results: []});
@@ -16,7 +17,7 @@ export const New = () => {
         <section className="container px-[15px] xl:px-0 flex flex-col mt-[150px] xl:my-[80px] gap-[20px]">
             <section className="flex justify-between">
                 <h2 className="text-[36px] impact ">{locale === 'ru' ? 'Новинки' : locale === 'kgz' ? 'Жаңы' : 'New'}</h2>
-                <button className="rounded-xl border-[2px] border-gray-800 w-[98px] h-[49px] px-[33px] py-[10px] ">{locale === 'ru' ? 'Все' : locale === 'kgz' ? 'Баары' : 'All'}</button>
+                <button onClick={() => redirect('/catalog')} className="rounded-xl border-[2px] border-gray-800 w-[98px] h-[49px] px-[33px] py-[10px] ">{locale === 'ru' ? 'Все' : locale === 'kgz' ? 'Баары' : 'All'}</button>
             </section>
             <section  className="xl:p-10 flex gap-[14px] overflow-x-scroll xl:gap-[20px] xl:space-x-6">
                 {

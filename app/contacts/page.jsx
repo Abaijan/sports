@@ -121,7 +121,7 @@ export  default function Contacts() {
                             </section>
                             <section className=' mt-10 mb-10'>
                                 <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2926.2264781681642!2d74.58359837683118!3d42.825829571153506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389ec9148e809157%3A0xb9fb8f9dfc9caab9!2z0L_RgNC-0YHQv9C10LrRgiDQp9GL0L3Qs9GL0Lcg0JDQudGC0LzQsNGC0L7QstCwLTgyLzU!5e0!3m2!1sru!2skg!4v1731502895390!5m2!1sru!2skg"
+                                    src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2926.2264781681642!2d${contacts.longitude}!3d${contacts.latitude}.825829571153506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389ec9148e809157%3A0xb9fb8f9dfc9caab9!2z0L_RgNC-0YHQv9C10LrRgiDQp9GL0L3Qs9GL0Lcg0JDQudGC0LzQsNGC0L7QstCwLTgyLzU!5e0!3m2!1sru!2skg!4v1731502895390!5m2!1sru!2skg`}
                                     width="600" height="200" style={{border: 0, borderRadius: '10px'}}
                                     className="xl:w-[632px] w-full h-[200px]`" allowFullScreen="" loading="lazy"
                                     referrerPolicy="no-referrer-when-downgrade"></iframe>

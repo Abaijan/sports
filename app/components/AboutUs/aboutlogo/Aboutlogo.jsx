@@ -4,6 +4,7 @@ import Image from 'next/image'
 import dynamicFetch from "@/hooks/fetch";
 import {getLocalizedText} from "@/hooks/locale";
 import {localeStore} from "@/app/store/localeStore";
+import Link from "next/link";
 
 export  function Aboutlogo() {
     const [about, setAbout] = useState();
@@ -30,8 +31,10 @@ export  function Aboutlogo() {
                             className='xl:mt-[00px] mt-[45vh] xl:w-[800px] flex flex-col justify-center p-5 xl:p-10'>
                             <h2 className=' text-5xl text-[#FF0000] drop-shadow-[50px_50px_50px_#FFFFFF]  bg-opacity-30   font-extrabold impact  mb-5'>{getLocalizedText(about, 'title', locale)}</h2>
                             <p className='drop-shadow-[1px_4px_5px_#FFFFFF]'>{getLocalizedText(about, 'description', locale)}</p>
+                            <Link href='/wholesale#formBlock'>
                             <button
                                 className=' bg-blue-700 text-white py-1 mt-10  w-[250px] rounded-[6px] xl:rounded-xl text-lg hover:bg-blue-800'>{locale === 'ru' ? 'Оформить заявку' : locale === 'kgz' ? 'Өтүнмө тапшыру' : 'Apply'}</button>
+                            </Link>
                         </section>
                     </section>
             }

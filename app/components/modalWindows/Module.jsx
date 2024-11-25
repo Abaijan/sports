@@ -49,7 +49,7 @@ export const ModalWindow = () => {
               {locale === 'ru' ? ' Заполните форму, и наш менеджер свяжется с вами для подтверждения деталей заказа' : locale === 'kgz' ? 'Форманы толтуруңуз жана биздин менеджер заказдын чоо-жайын ырастоо үчүн сиз менен байланышат' : 'Fill out the form and our manager will contact you to confirm the order details.'}
             </p>
 
-            <form className="flex gap-[10px] flex-col" onSubmit={handleSubmit} >
+            <form  className="flex gap-[10px] flex-col" onSubmit={handleSubmit} >
               <div>
                 <label htmlFor="fullName" className="block text-sm text-gray-500">ФИО</label>
                 <input
