@@ -18,7 +18,6 @@ export const Basket = api => {
         dynamicFetch('/discount').then(data => setDiscount(data));
     }, []);
 
-    // Общее количество товаров в корзине
     const totalItems = basket.reduce((total, item) => total + item.count, 0);
     const totalPrice = basket.reduce((total, item) => total + (item.price * item.count), 0);
 
